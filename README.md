@@ -67,10 +67,10 @@ Released under an MIT licence. See the LICENSE file.
 
 Copyright 2006-2021 David Llewellyn-Jones
 
-Components:
+Components (some have other licences):
 
 1. Flagellum: https://github.com/llewelld/flagelum
-2. BotStop: https://www.flypig.org.uk/svn/repos/Home/Botstop
+2. Botstop: https://www.flypig.org.uk/svn/repos/Home/Botstop
 3. Shaderback: https://www.flypig.co.uk/shaderback
 4. CKEditor 4: https://ckeditor.com/ckeditor-4/
 5. MathJax: https://www.mathjax.org/
