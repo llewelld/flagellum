@@ -20,11 +20,13 @@ Private pages, pages requiring CAPTCHA access, theming, RSS feeds and Disquis co
 
 This arrangements allows complex, multi-page, hierarchical, highly-structured websites to be managed flexibly and easily.
 
+For an example, see my [personal website](https://www.flypig.co.uk).
+
 ## Configuration
 
-All of the local configuration values can be found in `src/config/config.php`. The file looks like this in its default form, however, you should expect to change the majority of the values. A short summary of each option follows.
+All of the local configuration values can be found in `src/config/config.php`. The file looks like this in its default form, but you should expect to change most of the values. A short explanation of each option follows.
 
-```
+```php
 <?php
 $CONFIG = array(
 	'title' => 'ExampleSite',
@@ -41,9 +43,9 @@ $CONFIG = array(
 );
 ```
 
-title : This is the title of your site that will appear in the site metadata amongst other places. Try to make this understandable for humans.
+**`title`:** This is the title of your site that will appear in the site metadata amongst other places. Try to make this understandable for humans.
 
-root: This is the web site root address. Links will redirect to this, so it's important that it matches your site's URL. It should end with a `/` character.
+**`root`:** This is the web site root address. Links will redirect to this, so it's important that it matches your site's URL. It should end with a `/` character.
 
 **`dbhost`:** This should be the hostname or IP address of your MySQL (or compatible) database server.
 
