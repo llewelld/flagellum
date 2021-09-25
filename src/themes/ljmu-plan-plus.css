@@ -1,0 +1,570 @@
+html {
+	background: #ffffff;
+}
+
+a {
+	color: #2c006d;
+}
+
+a:hover {
+	color: #a7c72e;
+}
+
+#ljmulogo {
+	display: none;
+}
+
+h1 span {
+	display: none;
+}
+
+h2 {
+	margin-top: 0px;
+	clear: both;
+}
+
+h3 {
+	margin-top: 0px;
+	font-size: medium;
+}
+
+.badge {
+	display: inline;
+	float: right;
+	padding: 0.2em;
+	border: 0px transparent;
+}
+
+.sidebar {
+	height: 142px;
+	width: 100%;
+}
+
+#actions {
+	display: inline;
+	padding-top: 12px;
+	float: right;
+	clear: none;
+	width: 49%;
+}
+
+#archives {
+	display: inline;
+	padding-top: 12px;
+	float: left;
+	clear: none;
+	width: 49%;
+}
+
+.hlink {
+}
+
+.vlink {
+	display: inline;
+}
+
+#actions h2, #archives h2 {
+	display: none;
+}
+
+#actions a:hover {
+	background-color: #3cd32d;
+}
+
+input.text {
+	background: #ffffff;
+	border: #a7c72e solid 1px;
+}
+input.submit {
+	background: #ffffff;
+	border: #a7c72e solid 1px;
+}
+textarea.text {
+	background: #ffffff;
+	border: #a7c72e solid 1px;
+}
+
+li.download {
+	border-bottom: 1px solid black;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	list-style-position: outside;
+}
+
+.dl_title {
+	font-weight: bold;
+}
+
+li.reference {
+	border-bottom: 1px solid black;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	list-style-position: outside;
+}
+
+.ref_publication {
+	font-style: italic;
+}
+
+#archives a:hover {
+	background-color: #3cd32d;
+}
+
+.list_item {
+	list-style-position: outside;
+	display: list-item;
+	border-bottom: 0px solid black;
+	padding-bottom: 0.3em;
+	margin-bottom: 0.2em;
+}
+
+.list_title {
+	font-weight: bold;
+}
+
+.list_body {
+}
+
+.list_body p {
+	margin-top: 0em;
+	margin-bottom: 0.5em;
+}
+
+#copyright {
+	text-align: center;
+	font-size: small;
+	clear: both;
+}
+
+.float_right {
+	display: inline;
+	float: right;
+	padding: 0.5em;
+	border: 0px transparent;
+}
+
+.float_left {
+	display: inline;
+	float: left;
+	padding: 0.5em;
+	border: 0px transparent;
+}
+
+.float_centre {
+	display: block;
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding: 0.5em;
+	border: 0px transparent;
+}
+
+.float_inline {
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+	border: 0px transparent;
+}
+
+.align_right {
+	text-align: right;
+}
+
+.align_left {
+	text-align: left;
+}
+
+.align_centre {
+	text-align: center;
+}
+
+.align_full {
+	text-align: justify;
+}
+
+hr {
+	width: 80%;
+	background-color: #a7c72e;
+	color: #a7c72e;
+	height: 2px;
+	text-align: center;
+}
+
+.warning {
+	color: #ff0000;
+}
+
+.quote {
+	width: 80%;
+	font-size: smaller;
+	text-align: justify;
+	font-style: italic;
+	display: block;
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.animate {
+	visibility:hidden;
+	position:absolute;
+	overflow:hidden;
+	z-index:-100;
+}
+
+#footer {
+	clear: both;
+	width: 100%;
+}
+
+.ical {
+		font-size: 83%;
+	background: transparent url(../images/style/ical.png) no-repeat;
+		padding-left: 20px;
+}
+
+img, video, canvas {
+	max-width: 100%;
+	height: auto;
+}
+
+@media only screen and (min-width: 652px) {
+	body {
+		padding: 50px;
+		margin: 0px;
+		background: #cccccc url(../images/style/ljmu-lines.png) repeat-x 0% 0%;
+		font-family: sans-serif;
+		text-align: justify;
+		color: #000000;
+		float: none;
+	}
+	
+	.container {
+		background: #a7c72e url(../images/style/ljmu.png) no-repeat 98% 12px;
+		padding: 0px;
+		margin: auto;
+		border: 2px black solid;
+		clear:both;
+		width: auto;
+		position: relative;
+	}
+	
+	h1 {
+		background: transparent url(../images/style/title-ljmu.png) no-repeat 0% 100%;
+		margin: 0px 0px 20px 10px;
+		height: 152px;
+	}
+	
+	#navbar {
+		background: #a7c72e url(../images/style/down-ljmup.png) repeat-x 0px 0px;
+		text-align: left;
+		line-height: normal;
+		padding-left: 12px;
+		height: 48px;
+	}
+	
+	#navbar h2 {
+		display: none;
+	}
+	
+	#navigate h2 {
+		display: none;
+	}
+	
+	#navigate {
+		text-align: left;
+		clear: both;
+		line-height: 150%;
+		position: absolute;
+		width: auto;
+		left: 10px;
+		top: 10px;
+		display: block;
+		margin-right: 256px;
+	}
+	
+	#navigate a {
+		min-width: 62px;
+		height: 24px;
+		display: block;
+		border: white solid 2px;
+		clear: none;
+		font-size: medium;
+		font-weight: bold;
+		text-decoration: none;
+		text-transform: lowercase;
+		text-align: left;
+		color: white;
+		padding-left: 3px;
+		padding-right: 3px;
+		margin-bottom: 6px;
+		float: left;
+		margin-right: 12px;
+	}
+	
+	#navigate a:hover {
+		background-color: #3cd32d;
+	}
+	
+	#actions a {
+		width: 130px;
+		height: 24px;
+		display: block;
+		border: white solid 2px;
+		clear: none;
+		float: right;
+		margin-right: 9px;
+		font-size: small;
+		font-weight: bold;
+		text-decoration: none;
+		text-transform: lowercase;
+		text-align: left;
+		color: white;
+		padding-left: 3px;
+		padding-right: 3px;
+		margin-bottom: 6px;
+	}
+	
+	#archives a {
+		width: 130px;
+		height: 24px;
+		display: block;
+		border: white solid 2px;
+		clear: none;
+		float: left;
+		margin-left: 9px;
+		font-size: small;
+		font-weight: bold;
+		text-decoration: none;
+		text-transform: lowercase;
+		text-align: left;
+		color: white;
+		padding-left: 3px;
+		padding-right: 3px;
+		margin-bottom: 6px;
+	}
+	
+	#navbar a {
+		float: left;
+		font-size: medium;
+		font-weight: bold;
+		text-decoration: none;
+		text-transform: lowercase;
+		color: white;
+		background: transparent url(../images/style/blob-ljmup.png) no-repeat center left;
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+	
+	#navbar a:hover {
+		background: transparent url(../images/style/blobin-ljmup.png) no-repeat center left;
+	}
+	
+	#navbar .bottomright {
+		background: transparent url(../images/style/loca-ljmup.png) no-repeat top left;
+		padding-left: 108px;
+		height: 48px;
+	}
+	
+	.main, .main_full {
+		padding: 12px 12px 48px 12px;
+		background: #ffffff url(../images/style/up-ljmup.png) repeat-x 0% 100%;
+	}
+	
+	.list {
+		padding-left: 2.5em;
+	}
+}
+
+@media only screen and (max-width: 651px) {
+	body {
+		padding: 10px;
+		margin: 0px;
+		background: #cccccc url(../images/style/ljmu-lines.png) repeat-x 0% 0%;
+		font-family: sans-serif;
+		text-align: justify;
+		color: #000000;
+		float: none;
+	}
+	
+	.container {
+		background: #a7c72e url(../images/style/ljmu.png) no-repeat 50% 12px;
+		padding: 0px;
+		margin: auto;
+		border: 2px black solid;
+		clear:both;
+		width: auto;
+		position: relative;
+	}
+	
+	h1 {
+		background: transparent url(../images/style/title-ljmu.png) no-repeat 50% 100%;
+		margin: 0px 0px 20px 0px;
+		height: 128px;
+	}
+	
+	#navbar {
+		background: #a7c72e url(../images/style/down-ljmup.png) repeat-x 0px 0px;
+		text-align: left;
+		line-height: 150%;
+		padding-left: 0px;
+		margin: 0px;
+		height: 32px;
+		margin-right: 0px;
+		border: 0px;
+		width: 50%;
+		margin-left: 50%;
+		padding-bottom: 16px;
+		background-color: transparent;
+		overflow: hidden;
+		margin-top: 0px;
+		position: absolute;
+		color: white;
+		padding-left: 0px;
+	}
+	
+	#navbar:hover {
+		background: #a7c72e;
+		overflow: visible;
+		height: auto;
+		border-bottom: #000000 solid 2px;
+		width: 100%;
+		z-index: 100;
+		margin-left: 0;
+		padding-left: 0%;
+		left: 0px;
+	}
+	
+	#navbar h2 {
+		display: block;
+		width: auto;
+		text-align: right;
+		background: transparent url(../images/style/menu-white-right.png) no-repeat center right;
+		position: relative;
+		margin-right: 16px;
+	}
+	
+	#navigate h2 {
+		margin-left: 16px;
+		background: transparent url(../images/style/menu-white-left.png) no-repeat center left;
+		position: relative;
+		left: 0px;
+		padding-left: 26px;
+	}
+	
+	#navigate {
+		text-align: left;
+		clear: both;
+		line-height: 150%;
+		position: absolute;
+		width: 50%;
+		left: 0px;
+		top: 148px;
+		background: #ffffff url(../images/style/down-ljmup.png) repeat-x 0px 0px;
+		padding-bottom: 16px;
+		background-color: transparent;
+		height: 32px;
+		overflow: hidden;
+		color: white;
+	}
+	
+	#navigate:hover {
+		background: #a7c72e;
+		overflow: visible;
+		height: auto;
+		border-bottom: #000000 solid 2px;
+		width: 100%;
+		z-index: 100;
+		left: 0px;
+	}
+	
+	#navigate a, #navbar a {
+		min-width: 62px;
+		height: 24px;
+		display: block;
+		border: white solid 2px;
+		clear: none;
+		font-size: medium;
+		font-weight: bold;
+		text-decoration: none;
+		text-transform: lowercase;
+		text-align: left;
+		color: white;
+		padding-left: 3px;
+		padding-right: 3px;
+		margin-bottom: 6px;
+		margin-right: auto;
+		margin-left: auto;
+		width: 90%;
+	}
+	
+	#navigate a:hover, #navbar a:hover {
+		background-color: #3cd32d;
+	}
+	
+	#actions a {
+		width: 80%;
+		height: 24px;
+		display: block;
+		border: white solid 2px;
+		clear: none;
+		float: right;
+		margin-right: 9px;
+		font-size: small;
+		font-weight: bold;
+		text-decoration: none;
+		text-transform: lowercase;
+		text-align: left;
+		color: white;
+		padding-left: 3px;
+		padding-right: 3px;
+		margin-bottom: 6px;
+	}
+	
+	#archives a {
+		width: 80%;
+		height: 24px;
+		display: block;
+		border: white solid 2px;
+		clear: none;
+		float: left;
+		margin-left: 9px;
+		font-size: small;
+		font-weight: bold;
+		text-decoration: none;
+		text-transform: lowercase;
+		text-align: left;
+		color: white;
+		padding-left: 3px;
+		padding-right: 3px;
+		margin-bottom: 6px;
+	}
+
+	.main, .main_full {
+		padding: 56px 12px 48px 12px;
+		background: #ffffff url(../images/style/up-ljmup.png) repeat-x 0% 100%;
+	}
+	
+	.list {
+		padding-left: 14px;
+	}
+	
+	ul {
+		padding-left: 14px;
+	}
+	
+	ul li {
+		list-style-type: square;
+	}
+}
+
+@media only screen and (max-width: 364px) {
+	h1 {
+		background: transparent url(../images/style/title-ljmu.png) no-repeat 50% 100%;
+		background-size: 100% auto;
+		margin: 0px 0px 20px 0px;
+		height: 128px;
+	}
+}

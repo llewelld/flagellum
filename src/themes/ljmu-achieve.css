@@ -1,0 +1,347 @@
+body {
+  background: #66ccff;
+  font-family: sans-serif;
+  padding: 0px;
+  margin: 0px;
+  text-align: justify;
+  color: #000000;
+}
+
+a {
+  color: #2c006d;
+}
+
+a:hover {
+  color: #66ccff;
+}
+
+.container {
+  background: #66ccff url(../images/style/ljmu.png) no-repeat 98% 12px;
+  padding: 0px;
+  position: absolute;
+  margin: 0px;
+  width: 100%;
+}
+
+#ljmulogo {
+  display: none;
+}
+
+h1 {
+  background: transparent url(../images/style/title-ljmua.png) no-repeat left top;
+  margin: 96px 0px 20px 10px;
+  height: 32px;
+}
+
+h1 span {
+  display: none;
+}
+
+h2 {
+  margin-top: 0px;
+  clear: both;
+}
+
+h3 {
+  margin-top: 0px;
+  font-size: medium;
+}
+
+.badge {
+	display: inline;
+	float: right;
+	padding: 0.2em;
+	border: 0px transparent;
+}
+
+#navbar {
+  background: #66ccff url(../images/style/down-ljmua.png) repeat-x 0px 0px;
+  height: 48px;
+  text-align: left;
+  line-height: normal;
+  padding-left: 12px;
+}
+
+#navbar h2 {
+  display: none;
+}
+
+#navigate {
+  width: 75%;
+  position: absolute;
+  left: 11px;
+  top: 11px;
+  text-align: right;
+  clear: both;
+  line-height: 150%;
+  color: #66ccff;
+}
+
+#actions {
+  height: 48px;
+  display: inline;
+  padding-right: 12px;
+  border: 0px;
+  margin: 0px;
+  float: right;
+  clear: none;
+  width: 50%;
+}
+
+#archives {
+  height: 48px;
+  display: inline;
+  padding-left: 12px;
+  float: left;
+  clear: none;
+}
+
+.hlink {
+}
+
+.vlink {
+  display: inline;
+}
+
+#navigate h2, #actions h2, #archives h2 {
+  display: none;
+}
+
+#navigate a {
+  min-width: 62px;
+  height: 24px;
+  display: block;
+  border: white solid 2px;
+  clear: none;
+  float: left;
+  font-size: medium;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: lowercase;
+  text-align: left;
+  color: white;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-bottom: 12px;
+  margin-right: 11px;
+}
+
+#actions a {
+  min-width: 62px;
+  height: 24px;
+  display: block;
+  border: white solid 2px;
+  clear: none;
+  float: right;
+  margin-left: 11px;
+  font-size: medium;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: lowercase;
+  text-align: left;
+  color: white;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-bottom: 12px;
+}
+
+#archives a {
+  min-width: 62px;
+  height: 24px;
+  display: block;
+  border: white solid 2px;
+  clear: none;
+  float: left;
+  margin-right: 11px;
+  font-size: medium;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: lowercase;
+  text-align: left;
+  color: white;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-bottom: 12px;
+}
+
+#navbar a {
+  float: left;
+  font-size: medium;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: lowercase;
+  color: white;
+  background: transparent url(../images/style/blob-ljmua.png) no-repeat center left;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+#navbar .bottomright {
+  background: transparent url(../images/style/loca-ljmua.png) no-repeat top left;
+  padding-left: 108px;
+  height: 48px;
+}
+
+.main {
+  padding: 12px 12px 48px 12px;
+  background: #ffffff url(../images/style/up-ljmua.png) repeat-x 0% 100%;
+}
+
+.main_full {
+  padding: 12px 12px 48px 12px;
+  background: #ffffff url(../images/style/up-ljmua.png) repeat-x 0% 100%;
+}
+
+input.text {
+  background: #ffffff;
+  border: #66ccff solid 1px;
+}
+input.submit {
+  background: #ffffff;
+  border: #66ccff solid 1px;
+}
+textarea.text {
+  background: #ffffff;
+  border: #66ccff solid 1px;
+}
+
+li.download {
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  list-style-position: outside;
+}
+
+.dl_title {
+  font-weight: bold;
+}
+
+li.reference {
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  list-style-position: outside;
+}
+
+.ref_publication {
+  font-style: italic;
+}
+
+.list {
+  padding-left: 1.5em;
+}
+
+.list_item {
+  list-style-position: outside;
+  display: list-item;
+  border-bottom: 0px solid black;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.2em;
+}
+
+.list_title {
+  font-weight: bold;
+}
+
+.list_body {
+}
+
+.list_body p {
+  margin-top: 0em;
+  margin-bottom: 0.5em;
+}
+
+#copyright {
+  text-align: center;
+  font-size: small;
+  clear: both;
+}
+
+.float_right {
+  display: inline;
+  float: right;
+  padding: 0.5em;
+  border: 0px transparent;
+}
+
+.float_left {
+  display: inline;
+  float: left;
+  padding: 0.5em;
+  border: 0px transparent;
+}
+
+.float_centre {
+  display: block;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0.5em;
+  border: 0px transparent;
+}
+
+.float_inline {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  border: 0px transparent;
+}
+
+.align_right {
+  text-align: right;
+}
+
+.align_left {
+  text-align: left;
+}
+
+.align_centre {
+  text-align: center;
+}
+
+.align_full {
+  text-align: justify;
+}
+
+hr {
+  width: 80%;
+  background-color: #66ccff;
+  color: #66ccff;
+  height: 2px;
+  text-align: center;
+}
+
+.warning {
+  color: #ff0000;
+}
+
+.quote {
+  width: 80%;
+  font-size: smaller;
+  text-align: justify;
+  font-style: italic;
+  display: block;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.animate {
+  visibility:hidden;
+  position:absolute;
+  overflow:hidden;
+  z-index:-100;
+}
+
+#footer {
+  clear: both;
+  width: 100%;
+}
+
+.ical {
+    font-size: 83%;
+	background: transparent url(../images/style/ical.png) no-repeat;
+    padding-left: 20px;
+}

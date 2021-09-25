@@ -1,0 +1,70 @@
+precision highp float;
+
+#define M_PI 3.1415926535897932384626433832795
+varying vec2 fragCoord;
+uniform float iGlobalTime;
+uniform vec3 iResolution;
+
+// Standard Sketch shader with a bit of snow added
+void main(void) {
+	const float period = 0.8;
+	vec2 textCoord = fragCoord / iResolution.xy;
+	
+	float line = (iResolution.x * (0.5 - textCoord.s)) * sin(0.8 + (iGlobalTime / 30.0));
+	line -= (iResolution.y * (0.5 - textCoord.t)) * cos(0.8+ (iGlobalTime / 30.0));
+	line += (60.0 * sin(iGlobalTime / 5.0) * sin (iResolution.x * textCoord.s / 401.0)) * (sin(iGlobalTime / 3.5) * sin (iResolution.x * textCoord.s / 77.0));
+	line += (60.0 * sin(iGlobalTime / 3.01) * sin (iResolution.x * textCoord.s / 501.0)) * (sin(iGlobalTime / 4.0) * sin (iResolution.x * textCoord.s / 53.0));
+	float sine = sin(line / period);
+	float cycle = (1.0 + sine) / 2.0;
+	if (mod((line - (period * 1.5 * M_PI)) / (period * 2.0 * M_PI), 4.0) < 3.0) {
+		cycle = 0.0;
+	}
+
+	// Christmas colours are green and red
+	vec4 colour = (cycle * vec4(0.9, 0.4, 0.4, 1.0)) + ((1.0 - cycle) * vec4(0.7, 0.9, 0.7, 1.0));
+
+	// Add in a little snow
+	vec2 snowpos;
+	vec2 translate;
+	vec2 edges;
+	float dist;
+
+	// Foreground
+	snowpos = textCoord / (80.0 / iResolution.xy);
+	translate = vec2(0.5 * sin(snowpos.y), 0.5 * sin(snowpos.x + (iGlobalTime / 5.0)));
+	translate.y += (iGlobalTime / 2.0);
+	snowpos += translate;
+
+	edges = fract (snowpos) - vec2(0.5, 0.5);
+	dist = length(edges);
+	if (dist < 0.1) {
+		colour = colour + (0.5 - 5.0 * dist);
+	}
+
+	// Midground
+	snowpos = textCoord / (50.0 / iResolution.xy);
+	translate = vec2(0.2 * sin(snowpos.y), sin(snowpos.x * 0.8 + (iGlobalTime / 6.0)));
+	translate.y += (iGlobalTime / 3.0);
+	snowpos += translate;
+
+	edges = fract (snowpos) - vec2(0.5, 0.5);
+	dist = length(edges);
+	if (dist < 0.1) {
+		colour = colour + (0.5 - 5.0 * dist);
+	}
+	
+	// Background
+	snowpos = textCoord / (30.0 / iResolution.xy);
+	translate = vec2(0.4 * sin(snowpos.y), 0.6 * sin(snowpos.x * 0.9));
+	translate.y += (iGlobalTime / 4.0);
+	snowpos += translate;
+
+	edges = fract (snowpos) - vec2(0.5, 0.5);
+	dist = length(edges);
+	if (dist < 0.08) {
+		colour = colour + (0.5 - 5.0 * dist);
+	}
+	
+	gl_FragColor = colour;
+}
+

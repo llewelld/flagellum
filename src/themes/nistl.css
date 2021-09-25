@@ -1,0 +1,391 @@
+html {
+  background: #ffffff;
+}
+
+body {
+  padding: 50px;
+  margin: 0px;
+  background: #cccccc url(../images/style/nistl-ljmu-lines.png) repeat-x 0% 0%;
+  font-family: sans-serif;
+  text-align: justify;
+  color: #000000;
+  float: none;
+}
+
+a {
+  color: #2c006d;
+}
+
+a:hover {
+  color: #a64ca6;
+}
+
+.container {
+  background: white url(../images/style/nistl-watermark.png) no-repeat 100% 0%;
+  padding: 0px;
+  margin: auto;
+  clear:both;
+  width: auto;
+  border-left: black 1px solid;
+  border-right: black 4px solid;
+  border-top: black 1px solid;
+  border-bottom: black 4px solid;
+}
+
+#ljmulogo {
+}
+
+h1 {
+  background: transparent url(../images/style/title-nistl-t.png) no-repeat 0px 0px;
+  height: 113px;
+  margin: 0px 0px 0px 0px;
+}
+
+h1 span {
+ display: none;
+}
+
+h2 {
+  margin-top: 0px;
+  clear: both;
+}
+
+h3 {
+  margin-top: 0px;
+  font-size: medium;
+}
+
+.badge {
+	display: inline;
+	float: right;
+	padding: 0.2em;
+	border: 0px transparent;
+}
+
+#navbar {
+  height: 47px;
+  text-align: left;
+  line-height: normal;
+  padding-left: 0px;
+}
+
+#navbar h2 {
+  display: none;
+}
+
+#navbar .top {
+  background: transparent url(../images/style/nistl-bar.png) repeat-x 0% 100%;
+}
+
+#navbar .bottom {
+  background: transparent url(../images/style/title-nistl-b.png) no-repeat 0px 0px;
+  height: 47px;
+  border: transparent 0px solid;
+}
+
+#navigate {
+  padding-top: 12px;
+  text-align: left;
+  line-height: 150%;
+}
+
+#actions {
+  padding-top: 12px;
+  text-align: left;
+  line-height: 150%;
+}
+
+#archives {
+  padding-top: 12px;
+  text-align: left;
+  line-height: 150%;
+}
+
+.hlink {
+}
+
+.vlink {
+  display: inline;
+}
+
+#navigate h2, #actions h2, #archives h2 {
+  padding-left: 3px;
+}
+
+#navigate a {
+  width: 150px;
+  height: 24px;
+  display: block;
+  border: 0px none transparent;
+  clear: none;
+  font-size: medium;
+  text-decoration: none;
+  text-align: left;
+  color: black;
+  padding: 2px 5px 2px 26px;
+  margin: 0px 12px 6px 0px;
+  background: transparent url(../images/style/nistl-link.png) no-repeat center left;
+}
+
+#navigate a:hover {
+  padding: 0px 3px 0px 24px;
+  border: 2px solid #000000;
+  background: transparent url(../images/style/nistl-linkin.png) no-repeat center left;
+}
+
+#actions a {
+  width: 150px;
+  height: 24px;
+  display: block;
+  border: 0px none transparent;
+  clear: none;
+  font-size: medium;
+  text-decoration: none;
+  text-align: left;
+  color: black;
+  padding: 2px 5px 2px 26px;
+  margin: 0px 12px 6px 0px;
+  background: transparent url(../images/style/nistl-link.png) no-repeat center left;
+}
+
+#actions a:hover {
+  padding: 0px 3px 0px 24px;
+  border: 2px solid #000000;
+  background: transparent url(../images/style/nistl-linkin.png) no-repeat center left;
+}
+
+#archives a {
+  width: 150px;
+  height: 24px;
+  display: block;
+  border: 0px none transparent;
+  clear: none;
+  font-size: medium;
+  text-decoration: none;
+  text-align: left;
+  color: black;
+  padding: 2px 5px 2px 26px;
+  margin: 0px 12px 6px 0px;
+  background: transparent url(../images/style/nistl-link.png) no-repeat center left;
+}
+
+#archives a:hover {
+  padding: 0px 3px 0px 24px;
+  border: 2px solid #000000;
+  background: transparent url(../images/style/nistl-linkin.png) no-repeat center left;
+}
+
+#navbar a {
+  float: left;
+  font-size: medium;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  background: transparent url(../images/style/nistl-blob.png) no-repeat center left;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+#navbar a:hover {
+  background: transparent url(../images/style/nistl-blobin.png) no-repeat center left;
+}
+
+#navbar .bottomright {
+  padding-top: 24px;
+  padding-left: 232px;
+}
+
+.main {
+  padding: 12px 12px 0px 0px;
+  background: transparent url(../images/style/nistl-bar-b.png) repeat-x 0% 100%;
+  float: left;
+  margin-right: 200px;
+  display: inline;
+  clear: both;
+}
+
+.main .bottom {
+  padding: 0px 0px 52px 0px;
+  background: transparent url(../images/style/nistl-bar-bl.png) no-repeat 0% 100%;
+}
+
+.main .left {
+  padding: 0px 0px 0px 12px;
+}
+
+.main_full {
+  padding: 12px 12px 0px 0px;
+  background: transparent url(../images/style/nistl-bar-b.png) repeat-x 0% 100%;
+}
+
+.main_full .bottom {
+  padding: 0px 0px 52px 0px;
+  background: transparent url(../images/style/nistl-bar-bl.png) no-repeat 0% 100%;
+}
+
+.main_full .left {
+  padding: 0px 0px 0px 12px;
+}
+
+.sidebar {
+  background: transparent url(../images/style/nistl-vertical.png) repeat-y 0px 0px;
+  width: 190px;
+  float: right;
+  margin-left: -200px;
+  padding-left: 8px;
+  display: inline;
+}
+
+input.text {
+  background: #ffffff;
+  border: #c0c0c0 solid 1px;
+}
+input.submit {
+  background: #ffffff;
+  border: #c0c0c0 solid 1px;
+}
+textarea.text {
+  background: #ffffff;
+  border: #c0c0c0 solid 1px;
+}
+
+li.download {
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  list-style-position: outside;
+}
+
+.dl_title {
+  font-weight: bold;
+}
+
+li.reference {
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  list-style-position: outside;
+}
+
+.ref_publication {
+  font-style: italic;
+}
+
+.list {
+  padding-left: 1.5em;
+}
+
+.list_item {
+  list-style-position: outside;
+  display: list-item;
+  border-bottom: 0px solid black;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.2em;
+}
+
+.list_title {
+  font-weight: bold;
+}
+
+.list_body {
+}
+
+.list_body p {
+  margin-top: 0em;
+  margin-bottom: 0.5em;
+}
+
+#copyright {
+  text-align: center;
+  font-size: small;
+  clear: both;
+}
+
+.float_right {
+  display: inline;
+  float: right;
+  padding: 0.5em;
+  border: 0px transparent;
+}
+
+.float_left {
+  display: inline;
+  float: left;
+  padding: 0.5em;
+  border: 0px transparent;
+}
+
+.float_centre {
+  display: block;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0.5em;
+  border: 0px transparent;
+}
+
+.float_inline {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  border: 0px transparent;
+}
+
+.align_right {
+  text-align: right;
+}
+
+.align_left {
+  text-align: left;
+}
+
+.align_centre {
+  text-align: center;
+}
+
+.align_full {
+  text-align: justify;
+}
+
+hr {
+  width: 80%;
+  background-color: #c0c0c0;
+  color: #c0c0c0;
+  height: 2px;
+  text-align: center;
+}
+
+.warning {
+  color: #ff0000;
+}
+
+.quote {
+  width: 80%;
+  font-size: smaller;
+  text-align: justify;
+  font-style: italic;
+  display: block;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.animate {
+  visibility:hidden;
+  position:absolute;
+  overflow:hidden;
+  z-index:-100;
+}
+
+#footer {
+  clear: both;
+  width: 100%;
+}
+
+.ical {
+    font-size: 83%;
+	background: transparent url(../images/style/ical.png) no-repeat;
+    padding-left: 20px;
+}

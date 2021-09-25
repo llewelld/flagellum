@@ -1,0 +1,322 @@
+body {
+  background: #ffffff;
+  font-family: serif;
+  color: #000000;
+}
+
+a {
+  color: #2c006d;
+}
+
+a:hover {
+  color: #6d0000;
+}
+
+.container {
+  width: 90%;
+  padding: 0px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 5%;
+}
+
+h1 { 
+  background: transparent url(../images/style/title-crisp.png) no-repeat top center;
+  margin-top: 10px;
+  width: 100%;
+  height: 96px;
+}
+h1 span {
+  display: none
+}
+
+h2 {
+  background: transparent url(../images/style/dot-in.png) no-repeat center left;
+  margin-top: 0px;
+  padding-left: 30px;
+}
+
+h3 {
+  background: transparent url(../images/style/dot-in.png) no-repeat center left;
+  margin-top: 0px;
+  padding-left: 30px;
+  font-size: medium;
+}
+
+.badge {
+	display: inline;
+	float: right;
+	padding: 0.2em;
+	border: 0px transparent;
+}
+
+#navbar {
+  background: transparent;
+  width: 100%;
+  text-align: left;
+  line-height: normal;
+}
+
+#navigate {
+  background: transparent;
+  width: 100%;
+  text-align: left;
+  clear: both;
+  line-height: 150%;
+}
+
+#actions {
+  background: transparent;
+  width: 100%;
+  text-align: left;
+  clear: both;
+  line-height: 150%;
+}
+
+#archives {
+  background: transparent;
+  width: 100%;
+  text-align: left;
+  clear: both;
+  line-height: 150%;
+}
+
+.hlink {
+}
+
+.vlink {
+  width: 100%;
+  display: list-item;
+  list-style-type: none;
+}
+
+#actions a, #navbar a, #navigate a, #archives a {
+  background: transparent url(../images/style/dot-out.png) no-repeat center left;
+  padding-left: 30px;
+}
+
+#actions a:hover, #navbar a:hover, #navigate a:hover, #archives a:hover {
+  background: transparent url(../images/style/dot-in.png) no-repeat center left;
+}
+
+.main {
+  background: transparent;
+  width: auto;
+  display: inline;
+  float: right;
+  margin-left: 186px;
+  padding-bottom: 1em;
+}
+
+.main_full {
+  background: transparent;
+  width: 100%;
+  display: inline;
+  padding-bottom: 1em;
+}
+
+.sidebar {
+  background: transparent;
+  width: 185px;
+  display: inline;
+  float: left;
+  margin-right: -186px;
+}
+
+.top {
+  background: transparent;
+}
+.bottom {
+  background: transparent;
+}
+.left {
+  background: transparent;
+}
+.right {
+  background: transparent;
+}
+.topleft {
+  background: transparent;
+  width: 100%;
+}
+.topright {
+  background: transparent;
+}
+.bottomleft {
+  background: transparent;
+}
+.bottomright {
+  border: 2px black solid;
+  background: #e8e8e8 url(../images/style/top-crisp.png) repeat-x 0% 0%;
+  margin-right: 9px;
+  margin-bottom: 9px;
+  margin-left: 0px;
+  margin-top: 0px;
+  padding: 9px;
+  display: block;
+}
+
+input.text {
+  background: #ffffff;
+  border: #000000 solid 1px;
+}
+input.submit {
+  background: #ffffff;
+  border: #000000 solid 1px;
+}
+textarea.text {
+  background: #ffffff;
+  border: #000000 solid 1px;
+}
+
+li.download {
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  list-style-position: outside;
+}
+
+.dl_title {
+  font-weight: bold;
+}
+
+li.reference {
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  list-style-position: outside;
+}
+
+.ref_publication {
+  font-style: italic;
+}
+
+.list {
+  padding-left: 2.5em;
+}
+
+.list_item {
+  list-style-position: outside;
+  display: list-item;
+  border-bottom: 0px solid black;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.2em;
+}
+
+.list_title {
+  font-weight: bold;
+}
+
+.list_body {
+}
+
+.list_body p {
+  margin-top: 0em;
+  margin-bottom: 0.5em;
+}
+
+#copyright {
+  text-align: center;
+  font-size: small;
+  clear: both;
+}
+
+.float_right {
+  display: inline;
+  float: right;
+  padding: 0.5em;
+  border: 0px transparent;
+}
+
+.float_left {
+  display: inline;
+  float: left;
+  padding: 0.5em;
+  border: 0px transparent;
+}
+
+.float_centre {
+  display: block;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0.5em;
+  border: 0px transparent;
+}
+
+.float_inline {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  border: 0px transparent;
+}
+
+.align_right {
+  text-align: right;
+}
+
+.align_left {
+  text-align: left;
+}
+
+.align_centre {
+  text-align: center;
+}
+
+.align_full {
+  text-align: justify;
+}
+
+hr {
+  width: 80%;
+  background-color: #000000;
+  border: 0px transparent;
+  color: #000000;
+  height: 2px;
+}
+
+.warning {
+  color: #ff0000;
+}
+
+.quote {
+  width: 80%;
+  font-size: smaller;
+  text-align: justify;
+  font-style: italic;
+  display: block;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.animate {
+  visibility:hidden;
+  position:absolute;
+  overflow:hidden;
+  z-index:-100;
+}
+
+#footer {
+  clear: both;
+  width: 100%;
+}
+
+.ical {
+    font-size: 83%;
+	background: transparent url(../images/style/ical.png) no-repeat;
+    padding-left: 20px;
+}
+
+#show_comments {
+  background: transparent url(../images/style/dot-out.png) no-repeat center left;
+  padding-left: 30px;
+}
+
+#show_comments:hover {
+  background: transparent url(../images/style/dot-in.png) no-repeat center left;
+}
+

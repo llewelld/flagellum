@@ -1,0 +1,253 @@
+body {
+  background: transparent;
+  font-family: serif;
+  color: #000000;
+}
+
+a {
+  color: #2c00ff;
+}
+
+.container {
+  width: auto;
+  padding: 0px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 { 
+  margin-top: 10px;
+  width: 100%;
+  font-size: xx-large;
+  font-style: italic;
+  text-align: center;
+}
+
+h2 {
+  font-size: large;
+}
+
+h3 {
+  font-size: medium;
+}
+
+#navbar {
+  width: 100%;
+  line-height: normal;
+  clear: both;
+}
+
+#navbar h2 {
+  display: none;
+}
+
+#navigate {
+  width: 100%;
+  clear: both;
+}
+
+#actions {
+  width: 100%;
+  clear: both;
+}
+
+#archives {
+  width: 100%;
+  clear: both;
+}
+
+.hlink {
+  border-left: thin solid black;
+  padding-left: 0.5em;
+}
+
+.vlink {
+  border-left: thin solid black;
+  padding-left: 0.5em;
+  display: inline;
+}
+
+.main {
+  clear: both;
+  width: auto;
+  display: block;
+}
+
+.main_full {
+  clear: both;
+  width: auto;
+  display: block;
+}
+
+.sidebar {
+  display: block;
+  clear: both;
+}
+
+.top {
+}
+.bottom {
+}
+.left {
+}
+.right {
+}
+.topleft {
+}
+.topright {
+}
+.bottomleft {
+}
+.bottomright {
+  display: block;
+  border-top: black solid thin;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+
+input.text {
+  background: #ffffff;
+  border: #000000 solid 1px;
+}
+input.submit {
+  background: #ffffff;
+  border: #000000 solid 1px;
+}
+textarea.text {
+  background: #ffffff;
+  border: #000000 solid 1px;
+}
+
+li.download {
+  border-bottom: thin solid black;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  list-style-position: outside;
+}
+
+.dl_title {
+  font-weight: bold;
+}
+
+li.reference {
+  border-bottom: thin solid black;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  list-style-position: outside;
+}
+
+.ref_publication {
+  font-style: italic;
+}
+
+.list {
+  padding-left: 1.5em;
+}
+
+.list_item {
+  list-style-position: outside;
+  display: list-item;
+  border-bottom: 0px solid black;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.2em;
+}
+
+.list_title {
+  font-weight: bold;
+}
+
+.list_body {
+}
+
+.list_body p {
+  margin-top: 0em;
+  margin-bottom: 0.5em;
+}
+
+#copyright {
+  text-align: center;
+  font-size: small;
+  clear: both;
+}
+
+.float_right {
+  display: inline;
+  float: right;
+  padding: 0.5em;
+}
+
+.float_left {
+  display: inline;
+  float: left;
+  padding: 0.5em;
+}
+
+.float_centre {
+  display: block;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.float_inline {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+}
+
+.align_right {
+  text-align: right;
+}
+
+.align_left {
+  text-align: left;
+}
+
+.align_centre {
+  text-align: center;
+}
+
+.align_full {
+  text-align: justify;
+}
+
+hr {
+  width: 80%;
+  background-color: transparent;
+  border-bottom: black solid thin;
+  height: 0px;
+}
+
+.warning {
+  color: #ff0000;
+}
+
+.quote {
+  width: 80%;
+  font-size: smaller;
+  text-align: justify;
+  font-style: italic;
+  display: block;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.animate {
+  visibility:hidden;
+  position:absolute;
+  overflow:hidden;
+  z-index:-100;
+}
+
+#footer {
+}
+
+.ical {
+	background: transparent url(../images/style/ical.png) no-repeat;
+    padding-left: 20px;
+}

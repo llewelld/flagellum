@@ -1,0 +1,570 @@
+/* Font Cabin: http://fonts.googleapis.com/css?family=Cabin:400,700,700italic,400italic */
+@import url(../fonts/cabin.css);
+
+/* Main structure elementss */
+
+html {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	background: transparent url(../images/style/bokeh/back-bokeh.jpg) repeat top left;
+	background-attachment: fixed;
+}
+
+body {
+	/*background-attachment: fixed;*/
+	font-family: 'Cabin', sans-serif;
+	font-size: 12pt;
+	color: #000000;
+	font-weight: normal;
+	font-style: none;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+/* Main styling elements */
+
+/* We remove the flypig.co.uk banner for this style */
+h1 {
+	display: none;
+}
+
+h2 {
+	font-size: 24pt;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.archives h2, .actions h2 {
+	text-align: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #f0c5ff;
+	padding-left: 10px;
+}
+
+.bottomleft {
+	overflow: hidden;
+}
+
+.sidebar {
+	background: #222230;
+	height: 400px;
+}
+
+/* Remove the title from the navigation and breadcrumbs menus */
+.navigate h2, #navbar h2 {
+	display: none;
+}
+
+.container {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	text-align: justify;
+}
+
+.top {
+	background: transparent;
+	width: 100%;
+	padding-bottom: 160px;
+}
+
+.bottom {
+	width: 100%;
+	background: #f5f5f5;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.left {
+	background: #transparent;
+	width: auto;
+	margin-left: 32px;
+	margin-right: 32px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	padding: 8px;
+	overflow: auto;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 960px;
+}
+
+.mainlist .left {
+	background: transparent;
+	overflow: auto;
+}
+
+.maindownloads .left {
+	background: transparent;
+	overflow: auto;
+}
+
+.mainrefs .left {
+	background: transparent;
+	overflow: auto;
+}
+
+.maincomments .left {
+	background: transparent;
+	overflow: auto;
+}
+
+#copyright {
+	text-align: center;
+	font-size: small;
+	clear: both;
+}
+
+/* Breadcrumbs menu */
+
+#navbar {
+	background: transparent;
+	margin-bottom: 0px;
+	text-align: left;
+	height: 150px;
+	top: 0px;
+	left: 0%;
+}
+
+#navbar .top {
+	padding-bottom: 0px;
+	position: relative;
+	overflow: hidden;
+}
+
+#navbar .bottom {
+	background: #333340;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+#navbar .left {
+	background: #333340  url(../images/style/bokeh/pig-trail.png) no-repeat top 10px right 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+
+#navbar .bottomleft {
+	padding-right: 82px;
+}
+
+#navbar .right {
+	margin-top: 100px;
+	margin-bottom: 0px;
+	max-height: 50px;
+	padding: 0px;
+}
+
+/* Navigation menu */
+
+.navigate .right, #navbar .right {
+	overflow: hidden;
+}
+
+.navigate {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	overflow: hidden;
+	text-align: left;
+	max-height: 100px;
+	transition: max-height 1s ease;
+	overflow-y: hidden;
+}
+
+.navigate .top {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+.navigate .bottom {
+	background: #222230;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+.navigate .left {
+	padding: 0px;
+	margin: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	background: transparent  url(../images/style/bokeh/pig-trail.png) no-repeat top 10px right 0px;
+	min-height: 100px;
+}
+
+.navigate .right {
+	margin: 0px;
+	padding: 0px;
+	max-width: 960px;
+	/* Reduce to have items in the navigate bar disappear more quickly */
+	padding-right: 80px;
+}
+
+/* Archives menu */
+
+.archives {
+	margin-top: -416px;
+}
+
+.archives .top {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.archives .bottom {
+	background: #222230;
+	color: white;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	min-height: 400px;
+}
+
+.archives .right {
+	width: 50%;
+}
+
+/* Actions menu */
+
+.actions {
+	position: relative;
+	left: 50%;
+	width: 50%;
+	max-width: 388px;
+}
+
+.actions .top {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.actions .bottom {
+	background: #222230;
+	color: white;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	min-height: 400px;
+}
+
+/* List styling */
+
+.list_title {
+	font-weight: bold;
+	line-height: 200%;
+}
+
+.list_item {
+	margin-bottom: 16px;
+}
+
+ul.software {
+	padding-left: 0px;
+}
+
+li.download {
+	margin-bottom: 16px;
+	list-style-position: outside;
+	list-style-type: none;
+}
+
+.dl_title {
+	font-weight: bold;
+}
+
+ul.references {
+	padding-left: 0px;
+}
+
+li.reference {
+	margin-bottom: 16px;
+	list-style-position: outside;
+	list-style-type: none;
+}
+
+.ref_publication {
+	font-style: italic;
+}
+
+.ref_title {
+	font-weight: bold;
+}
+
+/* Link styling */
+
+.vlink a {
+	background: #22224000;
+	padding-left: 0px;
+	margin-right: 0px;
+	margin-top: 4px;
+	color: #8c44a6;
+	display: inline;
+}
+
+.hlink a {
+	background: transparent;
+	padding-left: 0px;
+	padding-right: 10px;
+	min-width: 100px;
+	margin-right: 8px;
+	margin-top: 4px;
+	display: inline;
+}
+
+.vlink {
+	line-height: 150%;
+	display: block;
+}
+
+.hlink {
+	line-height: 150%;
+	display: inline;
+}
+
+.navigate .vlink {
+	line-height: 150%;
+	display: inline-block;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 20px;
+	padding: 0px;
+	min-width: 100px;
+	border: 0px;
+}
+
+.navigate .vlink a {
+	display: inline-block;
+	margin: 0px;
+	padding: 30px 0px;
+	min-width: 100px;
+	height: 100px;
+	border: 0px;
+	font-size: 16pt;
+	text-align: center;
+	height: 40px;
+	color: #f0c5ff;
+}
+
+#navbar .hlink {
+	line-height: 150%;
+	display: inline-block;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 10px;
+	padding: 0px;
+	min-width: 110px;
+	border: 0px;
+	height: 50px;
+	padding-left: 0px;
+}
+
+#navbar .hlink a {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	padding-top: 12px;
+	min-width: 90px;
+	height: 38px;
+	border: 0px;
+	font-size: 16pt;
+	text-align: center;
+	padding-right: 20px;
+}
+
+.vlink a {
+	color: #f0c5ff;
+}
+
+.archives a, .actions a {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	min-width: 100px;
+	width: auto;
+	display: inline-block;
+	margin: 0px;
+}
+
+a, a:visited {
+	text-decoration: none;
+}
+
+#navbar a {
+	background: transparent url(../images/style/bokeh/hlink.png) no-repeat top right;
+	color: #8c44a6;
+}
+
+#show_comments {
+  color: #f0c5ff;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	background: #222230;
+	border-radius:  	0px;
+	display: block;
+}
+
+#show_comments:hover {
+	color: blue;
+	background: rgba(220, 220, 255, 0.7);
+	transition: all 0.3s ease;
+}
+
+/* Elements for use within pages */
+
+.float_right {
+	display: inline;
+	float: right;
+	padding: 0.5em;
+	border: 0px transparent;
+}
+
+.float_left {
+	display: inline;
+	float: left;
+	padding: 0.5em;
+	border: 0px transparent;
+}
+
+.float_centre {
+	display: block;
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding: 0.5em;
+	border: 0px transparent;
+}
+
+.float_inline {
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+	border: 0px transparent;
+}
+
+.align_right {
+	text-align: right;
+}
+
+.align_left {
+	text-align: left;
+}
+
+.align_centre {
+	text-align: center;
+}
+
+.align_full {
+	text-align: justify;
+}
+
+.badge {
+	display: inline;
+	float: right;
+	padding: 0.2em;
+	border: 0px transparent;
+	transition: transform 1s ease;
+}
+
+/* Animation */
+
+@keyframes zoomin {
+	0% {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1.0);
+	}
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* The text areas will zoom gently once loaded */
+.main .bottomright {
+	/* animation: 1.5s ease-out 0s 1 zoomin; */
+	animation: 2.5s ease-out 0s 1 fadein;
+}
+
+.navigate:hover {
+	max-height: 4096px;
+}
+
+#navbar .right:hover {
+	max-height: 550px;
+}
+
+#navbar a:hover {
+	background: rgba(220, 220, 255, 0.7) url(../images/style/bokeh/hlink.png) no-repeat top right;
+	color: blue;
+}
+
+.vlink a:hover {
+	color: blue;
+}
+
+a:hover {
+	color: blue;
+	background: rgba(220, 220, 255, 0.7);
+	transition: all 0.3s ease;
+}
+
+.badge:hover {
+	transform: rotate(360deg);
+}
+
+/* Responsive elements */
+
+@media only screen and (max-width: 11522px) {
+	.navigate .right, #navbar .right {
+		transition: max-height 1s ease;
+		overflow-y: hidden;
+	}
+	
+	.navigate .right:hover, #navbar .right:hover {
+		max-height: 4096px;
+	}
+}
+
+@media only screen and (min-width: 522px) {
+	.navigate .left {
+		background: transparent  url(../images/style/bokeh/pig-trail.png) no-repeat top 10px right 0px;
+	}
+}
+
+@media only screen and (max-width: 522px) {
+	.navigate .left {
+		background: transparent  url(../images/style/bokeh/pig-small.png) no-repeat top 10px right 0px;
+	}
+}
+
+

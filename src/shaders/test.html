@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=1024" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>Shaderback.js Tests</title>
+
+	<meta name="description" content="Using shaders for backgrounds for the Web" />
+	<meta name="author" content="David Llewellyn-Jones" />
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+	<script>
+	// See http://stackoverflow.com/a/5448595 for this parsing script
+	function parse(val) {
+		var result = "", tmp = [];
+		//.replace ( "?", "" ) 
+		// this is better, there might be a question mark inside
+		location.search.substr(1).split("&").forEach(function (item) {
+			tmp = item.split("=");
+			if (tmp[0] === val) result = decodeURIComponent(tmp[1]);
+		});
+		return result;
+	}
+	var shaderUri = parse("shader");
+	</script>
+
+	<script type="text/javascript" src="../shaderback.js"></script>
+	<script type="text/javascript">
+	if (shaderUri) {
+	  shaderback.setDebug(true);
+		window.onload = shaderback.loadURL(shaderUri);
+	}
+	</script>
+</head>
+
+<body style="font-family: 'Lato', sans-serif; font-size: 120%;">
+<div style="background: rgba(255, 255, 255, 0.8); margin: 20px; padding: 20px; width: auto; border-radius: 16px; display: inline-block;">
+<p /><h2>Shaderback.js testing page</h2>
+<p />Enter the URL of the fragment shader file to load and click submit.
+
+<p />Current shader file: <b><span id="details">Details</span></b>.
+<form name="ShaderForm" action="" method="get">
+Shader URL: <input id="filename" name="shader" type="text" value="" />
+<input type="submit" value="Submit" />
+</form>
+<p />Click on one of the following links for some examples.
+<ul>
+	<li><a href="test.html?shader=wavylines.txt">wavylines.txt</a>
+	<li><a href="test.html?shader=gloop.txt">gloop.txt</a>
+	<li><a href="test.html?shader=gloopall.txt">gloopall.txt</a>
+	<li><a href="test.html?shader=gloopflat.txt">gloopflat.txt</a>
+	<li><a href="test.html?shader=chainmail.txt">chainmail.txt</a>
+	<li><a href="test.html?shader=distortion.txt">distortion.txt</a>
+
+	<li><a href="test.html?shader=shadertoy-iq.txt">shadertoy-iq.txt</a> (see <a href="https://www.shadertoy.com/view/Xds3zN">Shadertoy</a> for original).
+	<li><a href="test.html?shader=shadertoy-iq2.txt">shadertoy-iq2.txt</a> (see <a href="https://www.shadertoy.com/view/4dl3zn">Shadertoy</a> for original).
+
+	<li><a href="test.html">Remove background</a>
+</ul>
+
+<script>
+	if (shaderUri) {
+		document.getElementById("details").innerHTML = shaderUri;
+	}
+	else {
+		document.getElementById("details").innerHTML = "No shader file loaded";
+	}
+	document.getElementById("filename").setAttribute("value", shaderUri);
+</script>
+<p />For more information see the Shaderback.js <a href="http://www.flypig.co.uk/shaderback">website</a> or <a href="https://github.com/llewelld/shaderback.js">GitHub page</a>.
+</div>
+</body>
+</html>
+
