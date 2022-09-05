@@ -240,14 +240,14 @@ function root($href, $conn, $style_code, $res_prefix, $human) {
 			$result .= substr($href, $previndex, $index + $element_len - 2 - $previndex);
 			// Now find the end
 			$i = $index + $element_len;
-			while (($i < strlen($href)) && (ord($href{$i}) != 39)
-				&& (ord($href{$i}) != 34)) {
+			while (($i < strlen($href)) && (ord($href[$i]) != 39)
+				&& (ord($href[$i]) != 34)) {
 				$i++;
 			}
 			$page_full = substr($href, $index + $element_len, $i - ($index + $element_len));
 
 			$i = $index + $element_len;
-			while (($i < strlen($href)) && (ord($href{$i}) > 47)) {
+			while (($i < strlen($href)) && (ord($href[$i]) > 47)) {
 				$i++;
 			}
 			$page = substr($href, $index + $element_len, $i - ($index + $element_len));
@@ -262,7 +262,7 @@ function root($href, $conn, $style_code, $res_prefix, $human) {
 
 			if ($page === "" || $page === "root") {
 				$result .= $res_prefix;
-				if (ord($href{$i}) == 47) {
+				if (ord($href[$i]) == 47) {
 					$i += 1;
 				}
 			}
@@ -352,7 +352,7 @@ function rootredirect($href, $conn, $style_code) {
 
 	if (substr($result, 0, 2) == "//") {
 		$i = 2;
-		while (($i < strlen($result)) && (ord($result{$i}) > 39)) {
+		while (($i < strlen($result)) && (ord($result[$i]) > 39)) {
 			$i++;
 		}
 		$page = substr($result, 2, $i - 2);
@@ -412,7 +412,7 @@ function rootprefix($href, $conn, $style_code, $res_prefix) {
 
 	if (substr($href, 0, 2) == "//") {
 		$i = 2;
-		while (($i < strlen($href)) && (ord($href{$i}) > 47)) {
+		while (($i < strlen($href)) && (ord($href[$i]) > 47)) {
 			$i++;
 		}
 		$page = substr($result, 2, $i - 2);
