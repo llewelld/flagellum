@@ -341,7 +341,7 @@ hr {
 }
 
 .ical {
-    font-size: 83%;
+	font-size: 83%;
 	background: transparent url(../images/style/ical.png) no-repeat;
-    padding-left: 20px;
+	padding-left: 20px;
 }

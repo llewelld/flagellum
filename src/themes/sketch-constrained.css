@@ -133,7 +133,7 @@ a:hover {
 	margin-bottom: 16px;
 	padding: 8px;
 	border-radius: 16px;
-	box-shadow: 0 0 4px #000000;	
+	box-shadow: 0 0 4px #000000;
 }
 
 .navigate {
@@ -324,7 +324,7 @@ a:hover {
 		transition: max-height 1s ease;
 		overflow-y: hidden;
 	}
-	
+
 	.navigate .right:hover, #navbar .right:hover {
 		max-height: 600px;
 	}
