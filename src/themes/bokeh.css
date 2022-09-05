@@ -51,21 +51,14 @@
 	text-align: justify;
 }
 
-.fill_white {
-	background-color: transparent;
-}
-
 .badge {
 	display: inline;
 	float: right;
-	padding: 3px;
 	border: 0px transparent solid;
 	transition: transform 1s ease;
 }
 
 .quote {
-	background: #eeeeee;
-	border: 1px solid #cccccc;
 	padding: 10px 12px;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -74,11 +67,8 @@
 pre {
 	display: block;
 	font-family: monospace;
-	font-size:80%;
+	font-size: 80%;
 	white-space: pre;
-	color: #000000;
-	background: #eeeeee;
-	border: 1px solid #cccccc;
 	padding: 10px 12px;
 }
 
@@ -96,7 +86,6 @@ body {
 	/*background-attachment: fixed;*/
 	font-family: 'Cabin', sans-serif;
 	font-size: 12pt;
-	color: #000000;
 	font-weight: normal;
 	font-style: none;
 	margin: 0px;
@@ -156,7 +145,6 @@ h2 {
 
 .bottom {
 	width: 100%;
-	background: #f5f5f5;
 	padding-top: 80px;
 	padding-bottom: 80px;
 }
@@ -485,14 +473,6 @@ a, a:visited {
 	text-decoration: none;
 }
 
-a {
-	color: #0000ee
-}
-
-.main a:visited {
-	color: #551a8b
-}
-
 #navbar a {
 	background: transparent url(../images/style/bokeh/hlink.png) no-repeat top right;
 	color: #8c44a6;
@@ -598,4 +578,89 @@ a:hover, .main a:hover {
 	}
 }
 
+/* Light/dark mode elements */
+
+@media (prefers-color-scheme: light) {
+	.bottom {
+		background: #f5f5f5;
+	}
+
+	.fill_white {
+		background-color: transparent;
+	}
+
+	.badge {
+		padding: 3px;
+	}
+
+	.quote {
+		background: #eeeeee;
+		border: 1px solid #cccccc;
+	}
+
+	pre {
+		color: #000000;
+		background: #eeeeee;
+		border: 1px solid #cccccc;
+	}
+
+	body {
+		color: #000000;
+	}
+
+	.bottom {
+		background: #f5f5f5;
+	}
+
+	a {
+		color: #0000ee;
+	}
+
+	.main a:visited {
+		color: #551a8b;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.bottom {
+		background: #0e1a2c;
+	}
+
+	.fill_white {
+		background-color: #ffffff;
+	}
+
+	.badge {
+		margin: 3px;
+		background: #ffffff;
+		border-radius: 21.5px;
+	}
+
+	.quote {
+		background: #0c213e;
+		border: 1px solid #2b405f;
+	}
+
+	pre {
+		color: #bbbbbb;
+		background: #0c213e;
+		border: 1px solid #2b405f;
+	}
+
+	body {
+		color: #ffffff;
+	}
+
+	.bottom {
+		background: #0e1a2c;
+	}
+
+	a {
+		color: #a359bd;
+	}
+
+	.main a:visited {
+		color: #f0c5ff;
+	}
+}
 

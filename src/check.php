@@ -3,8 +3,8 @@ $this_script_url = $_SERVER["SCRIPT_NAME"];
 $res_prefix = './';
 $style_code = isset($_GET["style"]) ? $_GET["style"] : "";
 $style_val = intval($style_code);
-$styles = array("bokeh", "crisp", "print", "ljmu-dream-plus", "ljmu-plan-plus", "ljmu-achieve-plus", "nodiad", "ljmu-dream", "ljmu-plan", "ljmu-achieve", "nistl", "style", "onyx", "serenitatis", "sketch", "sketch-constrained", "bokeh");
-$style_name = array("Default (Bokeh)", "Crisp", "Print", "LJMU Plus Dream", "LJMU Plus Plan", "LJMU Plus Achieve", "Nodiad", "LJMU Dream", "LJMU Plan", "LJMU Achieve", "NISTL", "Embossed", "Onyx", "Serenitatis", "Sketch", "Sketch Constrained", "Bokeh");
+$styles = array("bokeh", "crisp", "print", "ljmu-dream-plus", "ljmu-plan-plus", "ljmu-achieve-plus", "nodiad", "ljmu-dream", "ljmu-plan", "ljmu-achieve", "nistl", "style", "onyx", "serenitatis", "sketch", "sketch-constrained", "bokeh", "bokeh-light", "bokeh-dark");
+$style_name = array("Default (Bokeh)", "Crisp", "Print", "LJMU Plus Dream", "LJMU Plus Plan", "LJMU Plus Achieve", "Nodiad", "LJMU Dream", "LJMU Plan", "LJMU Achieve", "NISTL", "Embossed", "Onyx", "Serenitatis", "Sketch", "Sketch Constrained", "Bokeh", "Bokeh Light", "Bokeh Dark");
 $animate = FALSE;
 $append = "";
 $appendinit = "";
@@ -76,6 +76,8 @@ else {
 		$shaderback = 1;
 		break;
 	case 16: // Bokeh
+	case 17: // Bokeh Light
+	case 18: // Bokeh Dark
 		$shaderback = 2;
 		break;
 	}
