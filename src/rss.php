@@ -78,7 +78,7 @@ $navigation_string = preg_replace("/<a/", "<span class=\"vlink\"><a", $navigatio
 $navigation_string = preg_replace("/a>/", "a></span>", $navigation_string);
 
 if ($navigation_string == "") {
-	$navigation_string = "This is a dead end.";
+  $navigation_string = "<span class=\"deadend\">This is a dead end.</span>";
 }
 
 $side_text[0]  = "<div id=\"navigate\">\n";

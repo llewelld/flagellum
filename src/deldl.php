@@ -54,7 +54,7 @@ $navbar_string .= "<span class=\"hlink\">";
 $navbar_string .= "<a href=\"deldl.php?dl_id=" . $sw_id;
 $navbar_string .= "\">Delete</a></span>";
 
-$navigation_string = "This is a dead end.";
+$navigation_string = "<span class=\"deadend\">This is a dead end.</span>";
 
 $side_text_class[0] = "navigate";
 $side_text[0]  = "<div id=\"navigate\">\n";
