@@ -22,27 +22,27 @@ $user_email = "";
 $user_type = "none";
 
 if (sizeof($result) > 0) {
-  if ($user_password === $result[0]["user_password"]) {
-    $user_name = $result[0]["user_name"];
-    $user_email = $result[0]["user_email"];
-    $user_type = $result[0]["user_type"];
+	if ($user_password === $result[0]["user_password"]) {
+		$user_name = $result[0]["user_name"];
+		$user_email = $result[0]["user_email"];
+		$user_type = $result[0]["user_type"];
 
 		$expires = time();
-    if ($user_persist === TRUE) {
-    	$expires += 60 * 60 * 24 * 365;
-    }
-    else {
-    	$expires += 60 * 60;
-    }
-    
-    setcookie("user[user]", $user_username, $expires);
-    setcookie("user[pass]", $user_password, $expires);
+		if ($user_persist === TRUE) {
+			$expires += 60 * 60 * 24 * 365;
+		}
+		else {
+			$expires += 60 * 60;
+		}
+
+		setcookie("user[user]", $user_username, $expires);
+		setcookie("user[pass]", $user_password, $expires);
 
 		header("Location: " . rootredirect("//", $conn, $style_code));
-  }
-  else {
+	}
+	else {
 		header("Location: " . rootredirect("//login", $conn, $style_code));
-  }
+	}
 }
 else {
 	header("Location: " . rootredirect("//login", $conn, $style_code));

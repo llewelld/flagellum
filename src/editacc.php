@@ -14,7 +14,7 @@ $navbar_string;
 $navigation_list;
 $navigation_string;
 $inputval = array();
-$inputvalcheck;	
+$inputvalcheck;
 
 if (!check_number($check)) {
 	$check = 0;

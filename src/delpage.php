@@ -52,7 +52,7 @@ $navbar_array = explode(" ", $navbar_list);
 $navbar_string = "";
 for ($i = 0; $i < sizeof($navbar_array); $i++) {
 	$sql = $conn->prepare("SELECT * FROM Pages where page_name = :navbar_item");
-	$sql->bindParam(':navbar_item', $navbar_item);	
+	$sql->bindParam(':navbar_item', $navbar_item);
 	$navbar_item = $navbar_array[$i];
 	$sql->execute();
 	$result = $sql->fetchAll();

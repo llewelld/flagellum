@@ -20,7 +20,7 @@ $value_string[10] = $sw_keywords;
 
 if ($user_type === "admin") {
 	$sw_date = epoch_to_db_date(guess_date($value_string[2]));
-	
+
 	$sql = $conn->prepare("UPDATE Software SET software_title = :software_title WHERE software_id = :sw_id");
 	$sql->bindParam(':software_title', $value_string[0]);
 	$sql->bindParam(':sw_id', $sw_id);

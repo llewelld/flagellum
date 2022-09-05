@@ -107,7 +107,7 @@ if (($reference != "") || ($ref_id != -1)) {
 				}
 
 				$main_text[$ref_main] .= "</li>\n";
-				
+
 				$ref_count += 1;
 			}
 			$ref_pos += 1;

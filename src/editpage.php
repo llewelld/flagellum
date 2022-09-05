@@ -167,7 +167,7 @@ else {
 }
 
 include "template.php";
-include "fin.php"; 
+include "fin.php";
 
 ?>
 
