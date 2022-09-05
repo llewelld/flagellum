@@ -252,7 +252,7 @@ img, video, canvas {
 		color: #000000;
 		float: none;
 	}
-
+	
 	.container {
 		background: #5b91d0 url(../images/style/ljmu.png) no-repeat 98% 12px;
 		padding: 0px;
@@ -262,13 +262,13 @@ img, video, canvas {
 		width: auto;
 		position: relative;
 	}
-
+	
 	h1 {
 		background: transparent url(../images/style/title-ljmu.png) no-repeat 0% 100%;
 		margin: 0px 0px 20px 10px;
 		height: 152px;
 	}
-
+	
 	#navbar {
 		background: #5b91d0 url(../images/style/down-ljmud.png) repeat-x 0px 0px;
 		text-align: left;
@@ -276,15 +276,15 @@ img, video, canvas {
 		padding-left: 12px;
 		height: 48px;
 	}
-
+	
 	#navbar h2 {
 		display: none;
 	}
-
+	
 	#navigate h2 {
 		display: none;
 	}
-
+	
 	#navigate {
 		text-align: left;
 		clear: both;
@@ -296,7 +296,7 @@ img, video, canvas {
 		display: block;
 		margin-right: 256px;
 	}
-
+	
 	#navigate a {
 		min-width: 62px;
 		height: 24px;
@@ -315,11 +315,11 @@ img, video, canvas {
 		float: left;
 		margin-right: 12px;
 	}
-
+	
 	#navigate a:hover {
 		background-color: #68eddd;
 	}
-
+	
 	#actions a {
 		width: 130px;
 		height: 24px;
@@ -338,7 +338,7 @@ img, video, canvas {
 		padding-right: 3px;
 		margin-bottom: 6px;
 	}
-
+	
 	#archives a {
 		width: 130px;
 		height: 24px;
@@ -357,7 +357,7 @@ img, video, canvas {
 		padding-right: 3px;
 		margin-bottom: 6px;
 	}
-
+	
 	#navbar a {
 		float: left;
 		font-size: medium;
@@ -369,22 +369,22 @@ img, video, canvas {
 		padding-left: 24px;
 		padding-right: 24px;
 	}
-
+	
 	#navbar a:hover {
 		background: transparent url(../images/style/blobin-ljmud.png) no-repeat center left;
 	}
-
+	
 	#navbar .bottomright {
 		background: transparent url(../images/style/loca-ljmud.png) no-repeat top left;
 		padding-left: 108px;
 		height: 48px;
 	}
-
+	
 	.main, .main_full {
 		padding: 12px 12px 48px 12px;
 		background: #ffffff url(../images/style/up-ljmud.png) repeat-x 0% 100%;
 	}
-
+	
 	.list {
 		padding-left: 2.5em;
 	}
@@ -400,7 +400,7 @@ img, video, canvas {
 		color: #000000;
 		float: none;
 	}
-
+	
 	.container {
 		background: #5b91d0 url(../images/style/ljmu.png) no-repeat 50% 12px;
 		padding: 0px;
@@ -410,13 +410,13 @@ img, video, canvas {
 		width: auto;
 		position: relative;
 	}
-
+	
 	h1 {
 		background: transparent url(../images/style/title-ljmu.png) no-repeat 50% 100%;
 		margin: 0px 0px 20px 0px;
 		height: 128px;
 	}
-
+	
 	#navbar {
 		background: #5b91d0 url(../images/style/down-ljmud.png) repeat-x 0px 0px;
 		text-align: left;
@@ -436,7 +436,7 @@ img, video, canvas {
 		color: white;
 		padding-left: 0px;
 	}
-
+	
 	#navbar:hover {
 		background: #5b91d0;
 		overflow: visible;
@@ -448,7 +448,7 @@ img, video, canvas {
 		padding-left: 0%;
 		left: 0px;
 	}
-
+	
 	#navbar h2 {
 		display: block;
 		width: auto;
@@ -457,7 +457,7 @@ img, video, canvas {
 		position: relative;
 		margin-right: 16px;
 	}
-
+	
 	#navigate h2 {
 		margin-left: 16px;
 		background: transparent url(../images/style/menu-white-left.png) no-repeat center left;
@@ -465,7 +465,7 @@ img, video, canvas {
 		left: 0px;
 		padding-left: 26px;
 	}
-
+	
 	#navigate {
 		text-align: left;
 		clear: both;
@@ -481,7 +481,7 @@ img, video, canvas {
 		overflow: hidden;
 		color: white;
 	}
-
+	
 	#navigate:hover {
 		background: #5b91d0;
 		overflow: visible;
@@ -491,7 +491,7 @@ img, video, canvas {
 		z-index: 100;
 		left: 0px;
 	}
-
+	
 	#navigate a, #navbar a {
 		min-width: 62px;
 		height: 24px;
@@ -511,11 +511,11 @@ img, video, canvas {
 		margin-left: auto;
 		width: 90%;
 	}
-
+	
 	#navigate a:hover, #navbar a:hover {
 		background-color: #68eddd;
 	}
-
+	
 	#actions a {
 		width: 80%;
 		height: 24px;
@@ -534,7 +534,7 @@ img, video, canvas {
 		padding-right: 3px;
 		margin-bottom: 6px;
 	}
-
+	
 	#archives a {
 		width: 80%;
 		height: 24px;
@@ -558,15 +558,15 @@ img, video, canvas {
 		padding: 56px 12px 48px 12px;
 		background: #ffffff url(../images/style/up-ljmud.png) repeat-x 0% 100%;
 	}
-
+	
 	.list {
 		padding-left: 14px;
 	}
-
+	
 	ul {
 		padding-left: 14px;
 	}
-
+	
 	ul li {
 		list-style-type: square;
 	}
@@ -580,3 +580,4 @@ img, video, canvas {
 		height: 128px;
 	}
 }
+

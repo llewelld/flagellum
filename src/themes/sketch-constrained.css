@@ -1,7 +1,91 @@
 /* Font Cabin: http://fonts.googleapis.com/css?family=Cabin:400,700,700italic,400italic */
 @import url(../fonts/cabin.css);
 
-/* Main structure elementss */
+/* Elements for use within pages */
+
+.float_right {
+  display: inline;
+  float: right;
+  padding: 0.5em;
+  border: 0px transparent;
+}
+
+.float_left {
+  display: inline;
+  float: left;
+  padding: 0.5em;
+  border: 0px transparent;
+}
+
+.float_centre {
+  display: block;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0.5em;
+  border: 0px transparent;
+}
+
+.float_inline {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  border: 0px transparent;
+}
+
+.align_right {
+  text-align: right;
+}
+
+.align_left {
+  text-align: left;
+}
+
+.align_centre {
+  text-align: center;
+}
+
+.align_full {
+  text-align: justify;
+}
+
+.fill_white {
+	background-color: transparent;
+}
+
+.badge {
+	display: inline;
+	float: right;
+	padding: 0.2em;
+	border: 0px transparent;
+}
+
+.badge:hover {
+	transform: rotate(360deg);
+}
+
+.quote {
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	padding: 10px 12px;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-style: italic;
+}
+
+pre {
+	display: block;
+	font-family: monospace;
+	white-space: pre;
+	color: #000000;
+	background: transparent;
+	border: 4px solid #e9e2f5;
+	padding: 10px 12px;
+}
+
+/* Main structure elements */
 
 html {
 	margin: 0px;
@@ -133,7 +217,7 @@ a:hover {
 	margin-bottom: 16px;
 	padding: 8px;
 	border-radius: 16px;
-	box-shadow: 0 0 4px #000000;
+	box-shadow: 0 0 4px #000000;	
 }
 
 .navigate {
@@ -218,68 +302,6 @@ a:hover {
 	clear: both;
 }
 
-/* Elements for use within pages */
-
-.float_right {
-	display: inline;
-	float: right;
-	padding: 0.5em;
-	border: 0px transparent;
-}
-
-.float_left {
-	display: inline;
-	float: left;
-	padding: 0.5em;
-	border: 0px transparent;
-}
-
-.float_centre {
-	display: block;
-	clear: both;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	padding: 0.5em;
-	border: 0px transparent;
-}
-
-.float_inline {
-	display: inline;
-	margin-left: auto;
-	margin-right: auto;
-	vertical-align: middle;
-	border: 0px transparent;
-}
-
-.align_right {
-	text-align: right;
-}
-
-.align_left {
-	text-align: left;
-}
-
-.align_centre {
-	text-align: center;
-}
-
-.align_full {
-	text-align: justify;
-}
-
-.badge {
-	display: inline;
-	float: right;
-	padding: 0.2em;
-	border: 0px transparent;
-	transition: transform 1s ease;
-}
-
-.badge:hover {
-	transform: rotate(360deg);
-}
-
 #show_comments {
 	padding-left: 6px;
 	margin-right: 8px;
@@ -324,7 +346,7 @@ a:hover {
 		transition: max-height 1s ease;
 		overflow-y: hidden;
 	}
-
+	
 	.navigate .right:hover, #navbar .right:hover {
 		max-height: 600px;
 	}

@@ -1,3 +1,81 @@
+/* Elements for use within pages */
+
+.float_right {
+  display: inline;
+  float: right;
+  padding: 0.5em;
+  border: 0px transparent;
+}
+
+.float_left {
+  display: inline;
+  float: left;
+  padding: 0.5em;
+  border: 0px transparent;
+}
+
+.float_centre {
+  display: block;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0.5em;
+  border: 0px transparent;
+}
+
+.float_inline {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  border: 0px transparent;
+}
+
+.align_right {
+  text-align: right;
+}
+
+.align_left {
+  text-align: left;
+}
+
+.align_centre {
+  text-align: center;
+}
+
+.align_full {
+  text-align: justify;
+}
+
+.badge {
+	display: inline;
+	float: right;
+	padding: 0.2em;
+	border: 0px transparent;
+}
+
+.quote {
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	padding: 10px 12px;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-style: italic;
+}
+
+pre {
+	display: block;
+	font-family: monospace;
+	white-space: pre;
+	color: #000000;
+	background: #eeeeee;
+	border: 1px solid #cccccc;
+	padding: 10px 12px;
+}
+
+/* Main structure elements */
+
 body {
   background: #a7c72e;
   font-family: sans-serif;
@@ -45,13 +123,6 @@ h2 {
 h3 {
   margin-top: 0px;
   font-size: medium;
-}
-
-.badge {
-	display: inline;
-	float: right;
-	padding: 0.2em;
-	border: 0px transparent;
 }
 
 #navbar {
@@ -257,54 +328,6 @@ li.reference {
   clear: both;
 }
 
-.float_right {
-  display: inline;
-  float: right;
-  padding: 0.5em;
-  border: 0px transparent;
-}
-
-.float_left {
-  display: inline;
-  float: left;
-  padding: 0.5em;
-  border: 0px transparent;
-}
-
-.float_centre {
-  display: block;
-  clear: both;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding: 0.5em;
-  border: 0px transparent;
-}
-
-.float_inline {
-  display: inline;
-  margin-left: auto;
-  margin-right: auto;
-  vertical-align: middle;
-  border: 0px transparent;
-}
-
-.align_right {
-  text-align: right;
-}
-
-.align_left {
-  text-align: left;
-}
-
-.align_centre {
-  text-align: center;
-}
-
-.align_full {
-  text-align: justify;
-}
-
 hr {
   width: 80%;
   background-color: #a7c72e;
@@ -315,17 +338,6 @@ hr {
 
 .warning {
   color: #ff0000;
-}
-
-.quote {
-  width: 80%;
-  font-size: smaller;
-  text-align: justify;
-  font-style: italic;
-  display: block;
-  clear: both;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .animate {
@@ -345,3 +357,4 @@ hr {
 	background: transparent url(../images/style/ical.png) no-repeat;
     padding-left: 20px;
 }
+

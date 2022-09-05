@@ -1,3 +1,79 @@
+/* Elements for use within pages */
+
+.float_right {
+  display: inline;
+  float: right;
+  padding: 0.5em;
+}
+
+.float_left {
+  display: inline;
+  float: left;
+  padding: 0.5em;
+}
+
+.float_centre {
+  display: block;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.float_inline {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+}
+
+.align_right {
+  text-align: right;
+}
+
+.align_left {
+  text-align: left;
+}
+
+.align_centre {
+  text-align: center;
+}
+
+.align_full {
+  text-align: justify;
+}
+
+.fill_white {
+	background-color: transparent;
+}
+
+.badge {
+}
+
+.quote {
+  width: 90%;
+  font-size: smaller;
+  text-align: justify;
+  font-style: italic;
+  display: block;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+pre {
+	display: block;
+	font-family: monospace;
+	white-space: pre;
+	color: #000000;
+	background: transparent;
+	border: 1px solid #000000;
+	padding: 10px 12px;
+}
+
+/* Main structure elements */
+
 body {
   background: transparent;
   font-family: serif;
@@ -16,7 +92,7 @@ a {
   margin-right: auto;
 }
 
-h1 {
+h1 { 
   margin-top: 10px;
   width: 100%;
   font-size: xx-large;
@@ -171,50 +247,6 @@ li.reference {
   clear: both;
 }
 
-.float_right {
-  display: inline;
-  float: right;
-  padding: 0.5em;
-}
-
-.float_left {
-  display: inline;
-  float: left;
-  padding: 0.5em;
-}
-
-.float_centre {
-  display: block;
-  clear: both;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding: 0.5em;
-}
-
-.float_inline {
-  display: inline;
-  margin-left: auto;
-  margin-right: auto;
-  vertical-align: middle;
-}
-
-.align_right {
-  text-align: right;
-}
-
-.align_left {
-  text-align: left;
-}
-
-.align_centre {
-  text-align: center;
-}
-
-.align_full {
-  text-align: justify;
-}
-
 hr {
   width: 80%;
   background-color: transparent;
@@ -224,17 +256,6 @@ hr {
 
 .warning {
   color: #ff0000;
-}
-
-.quote {
-  width: 80%;
-  font-size: smaller;
-  text-align: justify;
-  font-style: italic;
-  display: block;
-  clear: both;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .animate {
@@ -251,3 +272,4 @@ hr {
 	background: transparent url(../images/style/ical.png) no-repeat;
     padding-left: 20px;
 }
+
