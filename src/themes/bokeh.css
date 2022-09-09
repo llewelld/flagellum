@@ -580,7 +580,7 @@ a:hover, .main a:hover {
 
 /* Light/dark mode elements */
 
-@media (prefers-color-scheme: light) {
+@media not (prefers-color-scheme: dark) {
 	.bottom {
 		background: #f5f5f5;
 	}
