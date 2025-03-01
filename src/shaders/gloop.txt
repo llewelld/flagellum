@@ -1,4 +1,4 @@
-precision mediump float;
+precision highp float;
 
 #define M_PI 3.1415926535897932384626433832795
 varying vec2 fragCoord;
@@ -32,7 +32,7 @@ vec3 BlinnPhongLighting(vec3 pos, vec3 viewDir, vec3 normal) {
 	return (diffuse + specular + ambientColour);
 }
 
-void main(void) {
+void main() {
 	const float stickiness = 0.0050;
 	const float r1 = 0.25;
 	const float r2 = 0.25;
