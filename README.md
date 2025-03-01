@@ -40,6 +40,11 @@ $CONFIG = array(
 	'passwordsalt' => '012AbCdEfGhIjKlMnO',
 	// simplify_urls: 0 - none; 1 - reduce to page; 2 - rewrite page as folder
 	'simplify_urls' => 2,
+	'author' => 'Author\ name',
+	'description' => 'A Flagellum example site',
+	'keywords' => 'Flagellum, website, lists, templates, pages',
+	'image' => 'https://www.example.com/images/flypig-card.jpg',
+	'fediversecreator' => '@account@mastodon.server',
 );
 ```
 
@@ -62,6 +67,16 @@ $CONFIG = array(
 **`passwordsalt`:** Used as the salt for storing passwords in the database. Change it to some random string. Changing this value will cause all passwords to become invalidated.
 
 **`simplify_urls`**: Numerical option used to simplify URLs used in the address bar. Set to 0 for the full URL to be shown; set to 1 to reduce the URL to just the page value; set to 2 to rewrite the page to appear as a root folder after the URL.
+
+**`author`**: The author of the site, used to populate metata, including [Open Graph](https://ogp.me/) tags.
+
+**`description`**: A description of the site, used to populate metata, including [Open Graph](https://ogp.me/) tags.
+
+**`keywords`**: Keywords for the site, used to populate metata.
+
+**`image`**: provides the [Open Graph](https://ogp.me/) image for the site.
+
+**`fediversecreator`**: used to populate the `fediverse:creator` metata for the site.
 
 ## Licence and Contact
 
