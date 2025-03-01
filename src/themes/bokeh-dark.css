@@ -76,12 +76,13 @@
 pre {
 	display: block;
 	font-family: monospace;
-	font-size: 80%;
-	white-space: pre;
+	font-size:80%;
+	white-space: pre-wrap;
 	color: #bbbbbb;
 	background: #0c213e;
 	border: 1px solid #2b405f;
 	padding: 10px 12px;
+	text-align: left;
 }
 
 /* Main structure elements */
@@ -488,11 +489,11 @@ a, a:visited {
 }
 
 a {
-	color: #a359bd;
+	color: #a359bd
 }
 
 .main a:visited {
-	color: #f0c5ff;
+	color: #f0c5ff
 }
 
 #navbar a {

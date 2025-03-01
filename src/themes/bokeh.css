@@ -68,8 +68,9 @@ pre {
 	display: block;
 	font-family: monospace;
 	font-size: 80%;
-	white-space: pre;
+	white-space: pre-wrap;
 	padding: 10px 12px;
+	text-align: left;
 }
 
 /* Main structure elements */
@@ -580,7 +581,7 @@ a:hover, .main a:hover {
 
 /* Light/dark mode elements */
 
-@media not (prefers-color-scheme: dark) {
+@media not all and (prefers-color-scheme: dark) {
 	.bottom {
 		background: #f5f5f5;
 	}

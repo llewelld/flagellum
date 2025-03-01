@@ -11,6 +11,11 @@ $appendinit = "";
 $appendpost = "";
 $title = $CONFIG['title'];
 $root = $CONFIG['root'];
+$author = $CONFIG['author'];
+$description = $CONFIG['description'];
+$keywords = $CONFIG['keywords'];
+$image = $CONFIG['image'];
+$fediversecreator = $CONFIG['fediversecreator'];
 
 $user_username = "";
 $user_password = "";
@@ -25,13 +30,12 @@ $human_salt = $CONFIG['botstopsalt'];
 $human_ipadd = "";
 $code_salt = 'slkdf34gj';
 $animation = 0;
-$shaderback = 0;
-$shaders = array("", "wavylines.txt", "bokeh.txt");
-//$shaders = array("", "wavylines.txt", "snowflakes.txt");
-//$shaders = array("", "wavylines.txt", "blink.txt");
-//$shaders = array("", "wavylines.txt", "fireworks.txt");
-$shader_file = "";
-//$today = date();
+$shaders_light = array("", "wavylines.txt", "bokeh.txt");
+$shaders_dark = array("", "wavylines.txt", "stars.txt");
+
+
+$shader_file_light = "";
+$shader_file_dark = "";
 
 $human_ipadd = $_SERVER['REMOTE_ADDR'];
 if (isset($_COOKIE["botstop"]["human"]) && $_COOKIE["botstop"]["human"] == botstop_hash($human_ipadd . $human_salt)) {
@@ -50,13 +54,13 @@ if ($style_val < 0) {
 
 $animate = FALSE;
 // The following 1 line is the standard animation code
-//$animation = (0 + round(time() / (17 * 60 * 60 * 1000))) % 10;
+$animation = (0 + round(time() / (17 * 60 * 60 * 1000))) % 10;
 
 // The following 4 lines are for producing the Christmas animations
-$animation = ((0 + floor((rand() / getrandmax()) * 4)) + 1) * 2;
-if ($animation == 8) {
-	$animation = 10;
-}
+//$animation = ((0 + floor((rand() / getrandmax()) * 4)) + 1) * 2;
+//if ($animation == 8) {
+//	$animation = 10;
+//}
 // End of Christmas animation code
 
 if ($style_val & 0x200) {
@@ -65,7 +69,8 @@ if ($style_val & 0x200) {
 else {
 	switch ($style_val) {
 	case 0: // Default style
-		$shaderback = 2;
+		$shader_file_light = $shaders_light[2];
+		$shader_file_dark = $shaders_dark[2];
 		break;
 	case 12: // Onyx
 	case 13: // Serenitatis
@@ -73,17 +78,23 @@ else {
 		break;
 	case 14: // Sketch
 	case 15: // Sketch Fixed Width
-		$shaderback = 1;
+		$shader_file_light = $shaders_light[1];
+		$shader_file_dark = $shader_file_light;
 		break;
 	case 16: // Bokeh
+		$shader_file_light = $shaders_light[2];
+		$shader_file_dark = $shaders_dark[2];
+		break;
 	case 17: // Bokeh Light
+		$shader_file_light = $shaders_light[2];
+		$shader_file_dark = $shader_file_light;
+		break;
 	case 18: // Bokeh Dark
-		$shaderback = 2;
+		$shader_file_light = $shaders_dark[2];
+		$shader_file_dark = $shader_file_light;
 		break;
 	}
 }
-
-$shader_file = $shaders[$shaderback];
 
 // The following 4 lines are for producing the Halloween animations
 //if (($style_val == 0) && ($animate == FALSE)) {

@@ -35,9 +35,11 @@ function getdimensions () {
     clipheight = wheight + window.pageYOffset;
   }
   else {
-    clipwidth = wwidth + document.documentElement.scrollLeft
+    clipwidth = wwidth + document.documentElement.scrollLeft;
     clipheight = wheight + document.documentElement.scrollTop;
   }
+  wheight = document.documentElement.scrollHeight;
+  clipheight = document.documentElement.scrollHeight;
 }
 
 function startmove () {
@@ -48,8 +50,8 @@ function startmove () {
   inject = "";
   for (i = 0; i < spooks; i++) {
     ftype = i;
-		frame[i] = (i * 7) % frames;
-    inject += '<div id="spook'+i+'" class="animate" style="left:0px;top:0px;width:' + fxysize[ftype] + 'px;height:' + fxysize[ftype] + 'px;opacity:0.0;filter:alpha(opacity=0)"><img id="spooki'+i+'" src="./images/animate/spooky/' + fname[frame[i]] + '" width="' + fxysize[ftype] + '" height="' + fxysize[ftype] + '"></div>\n';
+    frame[i] = (i * 7) % frames;
+    inject += '<div id="spook'+i+'" class="animate" style="z-index:100;pointer-events:none;overflow:hidden;position:absolute;left:0px;top:0px;width:' + fxysize[ftype] + 'px;height:' + fxysize[ftype] + 'px;opacity:0.0;filter:alpha(opacity=0)"><img id="spooki'+i+'" src="./images/animate/spooky/' + fname[frame[i]] + '" width="' + fxysize[ftype] + '" height="' + fxysize[ftype] + '"></div>\n';
   }
   document.getElementById ("animate").innerHTML = inject;
   inject = "";
@@ -59,7 +61,7 @@ function startmove () {
 
   for (i = 0; i < spooks; i++) {
     a1[i] = Math.random() / 10000;
-    a2[i] = Math.random() / 10000;
+    a2[i] = Math.random() / 100000;
     size[i] = Math.random() / 5000;
     opacity[i] = Math.random() / 5000;
   }
@@ -98,7 +100,7 @@ function movemenu () {
   for (i = 0; i < spooks; i++) {
     ftype = i % ftypes;
 
-		frame[i] = (frame[i] + 0.5) % frames;
+    frame[i] = (frame[i] + 0.5) % frames;
     xysize = fxysize[ftype] * (((Math.sin (size[i] * time)) + 3) / 4);
     xpos = hwidth + (hwidth * (Math.sin (a1[i] * time))) - (xysize / 2);
     ypos = hheight + (hheight * (Math.sin (a2[i] * time))) - (xysize / 2);
@@ -120,7 +122,7 @@ function movemenu () {
     document.getElementById (name).style.height = height + "px";
     document.getElementById (name).style.opacity = op;
     document.getElementById (name).style.filter = "alpha(opacity=" + (op * 100) + ")";
-		document.getElementById (image).src = "./images/animate/spooky/" + fname[Math.floor(frame[i])];
+    document.getElementById (image).src = "./images/animate/spooky/" + fname[Math.floor(frame[i])];
   }
   Id = window.setTimeout ("movemenu();", 50);
   prevtime = time;

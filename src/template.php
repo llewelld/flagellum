@@ -3,29 +3,37 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
   <title><?= $page_title ?></title>
-  <link rev="Made" href="<?= $root ?>/?page=email"/>
-  <link rel="Start" href="<?= $res_prefix ?>"/>
-  <link rel="Up" href="<?= $res_prefix ?>"/>
-  <link rel="Prev" href="<?= $res_prefix ?>"/>
-  <link rel="Next" href="<?= $res_prefix ?>"/>
-  <link rel="Copyright" href="<?= $root ?>?page=copyright"/>
+  <link rev="Made" href="<?= $root ?>email" />
+  <link rel="Start" href="<?= $res_prefix ?>" />
+  <link rel="Up" href="<?= $res_prefix ?>" />
+  <link rel="Prev" href="<?= $res_prefix ?>" />
+  <link rel="Next" href="<?= $res_prefix ?>" />
+  <link rel="Copyright" href="<?= $root ?>copyright" />
 <?php
   for ($i = 0; $i < sizeof($styles); $i++) {
     if ($i == $style_val) {
-      echo("  <link rel=\"stylesheet\" href=\"" . $res_prefix . "themes/" . $styles[$i] . ".css\" type=\"text/css\" title=\"" . $style_name[$i] . "\" media=\"screen\"/>\n");
+      echo("  <link rel=\"stylesheet\" href=\"" . $res_prefix . "themes/" . $styles[$i] . ".css\" type=\"text/css\" title=\"" . $style_name[$i] . "\" media=\"screen\" />\n");
     }
     else {
-      echo("  <link rel=\"alternate styleSheet\" href=\"" . $res_prefix . "themes/" . $styles[$i] . ".css\" type=\"text/css\" title=\"" . $style_name[$i] . "\" media=\"screen\"/>\n");
+      echo("  <link rel=\"alternate styleSheet\" href=\"" . $res_prefix . "themes/" . $styles[$i] . ".css\" type=\"text/css\" title=\"" . $style_name[$i] . "\" media=\"screen\" />\n");
     }
 }
 ?>
-  <link rel="stylesheet" href="<?= $res_prefix ?>themes/print.css" type="text/css" media="print"/>
+  <link rel="stylesheet" href="<?= $res_prefix ?>themes/print.css" type="text/css" media="print" />
 
-  <meta name="author" content="David Llewellyn-Jones"/>
-  <meta name="description" content="Flying Pig's personal page, covering research, computing, thoughts and other things that might be of interest"/>
-  <meta name="keywords" content="Flying Pig, Flypig, personal, home page, research, computing"/>
+  <meta name="author" content="<?= $author ?>" />
+  <meta name="description" content="<?= $description ?>" />
+  <meta name="keywords" content="<?= $keywords ?>" />
+  <meta name="fediverse:creator" content="<?= $fediversecreator ?>" />
+
+  <meta property="og:url" content="<?= current_url() ?>" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="<?= $page_title ?>" />
+  <meta property="og:description" content="<?= $description ?>" />
+  <meta property="og:image" content="<?= $image ?>" />
+  <meta property="og:author_name" content="<?= $author ?>" />
+
   <meta name="robots" content="all" />
-
   <meta name="viewport" content="initial-scale=1.0" />
 <?php
 if ($animate) {
@@ -39,14 +47,37 @@ if ($animate) {
 // Default is "shaders/wavylines.txt"
 // Christmas decorations "shaders/snow.txt"
 
-if (($shaderback != 0) && ($shader_file != "")) {
+if ($shader_file_light != "") {
+    if ($shader_file_light == $shader_file_dark) {
 ?>
   <script type="text/javascript" src="shaderback.js"></script>
   <script type="text/javascript">
-  shaderback.setDebug(true);
-  window.onload = shaderback.loadURL("shaders/<?= $shader_file ?>");
+  //shaderback.setDebug(true);
+  shaderback.loadURL("shaders/<?= $shader_file_light ?>")
   </script>
 <?php
+    }
+    else {
+?>
+  <script type="text/javascript" src="shaderback.js"></script>
+  <script type="text/javascript">
+  //shaderback.setDebug(true);
+
+  const darkMode = window.matchMedia("(prefers-color-scheme:dark)");
+  darkMode.addListener(changeMode);
+  window.onload = changeMode(darkMode);
+
+  function changeMode(darkMode) {
+    if (darkMode.matches) {
+      shaderback.loadURL("shaders/<?= $shader_file_dark ?>");
+    }
+    else {
+      shaderback.loadURL("shaders/<?= $shader_file_light ?>");
+    }
+  }
+  </script>
+<?php
+    }
 }
 ?>
   <script type="text/javascript">

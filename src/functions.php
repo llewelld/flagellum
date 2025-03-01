@@ -485,7 +485,7 @@ function current_url() {
 		$protocol .= "s";
 	}
 	$port = $_SERVER["SERVER_PORT"];
-	if ($port == "80") {
+	if ($port == "80" || $port == "443") {
 		$port = "";
 	}
 	else {

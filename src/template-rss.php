@@ -18,7 +18,7 @@ if ($download_description !== "") {
 	}
 	$description .= $download_description;
 }
-$description .= " from the Flying Pig\'s website.";
+$description .= " from flypig\'s website.";
 $description = clean_text_rss(root($description, $conn, $style_code, $res_prefix, $human));
 ?>
 	<channel>
@@ -28,7 +28,7 @@ $description = clean_text_rss(root($description, $conn, $style_code, $res_prefix
 		<language>en-gb</language>
 		<webMaster><?= $root ?>?page=email</webMaster>
 		<managingEditor><?= $root ?>?page=email</managingEditor>
-		<generator>flypig's wiki-list content system</generator>
+		<generator>Flagellum</generator>
 <?= $list_items . $reference_items . $download_items ?></channel>
 </rss>
 
