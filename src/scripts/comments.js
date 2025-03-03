@@ -27,9 +27,11 @@ function escapeHtml (unsafe) {
 function showComments(instance, comment_id) {
   const loadComment = document.getElementById("show_comments");
   const commentsList = document.getElementById("comments_list");
+  const endpoint = instance + "/api/v1/statuses/" + comment_id + "/context";
+  const thread = instance + "/statuses/" + comment_id;
 
   loadComment.innerHTML = "Loading comments";
-  fetch(instance + "/api/v1/statuses/" + comment_id + "/context")
+  fetch(endpoint)
     .then(function (response) {
       return response.json()
     })
@@ -62,7 +64,7 @@ function showComments(instance, comment_id) {
           commentsList.appendChild(DOMPurify.sanitize(comment, { RETURN_DOM_FRAGMENT: true }));
         });
       } else {
-        commentsList.innerHTML = "<p>No comments found</p>";
+        commentsList.innerHTML = "<div class=\"comments-none\"><p>No comments yet. Reply to the <a href=\"" + thread + "\">Fediverse thread</a> for it to appear here.</p></div>";
       }
     })
     .then(() => {loadComment.innerHTML = "Reload comments"});

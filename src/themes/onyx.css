@@ -591,3 +591,7 @@ summary::before {
     display: none;
 }
 
+.comments-none {
+    padding-top: 32px;
+}
+
