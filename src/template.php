@@ -1,40 +1,40 @@
-<!DOCTYPE html SYSTEM "<?= $root ?>dtds/xhtml11-flat-disqus.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <title><?= $page_title ?></title>
-  <link rev="Made" href="<?= $root ?>email" />
-  <link rel="Start" href="<?= $res_prefix ?>" />
-  <link rel="Up" href="<?= $res_prefix ?>" />
-  <link rel="Prev" href="<?= $res_prefix ?>" />
-  <link rel="Next" href="<?= $res_prefix ?>" />
-  <link rel="Copyright" href="<?= $root ?>copyright" />
+  <link rel="Made" href="<?= $root ?>email">
+  <link rel="Start" href="<?= $res_prefix ?>">
+  <link rel="Up" href="<?= $res_prefix ?>">
+  <link rel="Prev" href="<?= $res_prefix ?>">
+  <link rel="Next" href="<?= $res_prefix ?>">
+  <link rel="Copyright" href="<?= $root ?>copyright">
 <?php
   for ($i = 0; $i < sizeof($styles); $i++) {
     if ($i == $style_val) {
-      echo("  <link rel=\"stylesheet\" href=\"" . $res_prefix . "themes/" . $styles[$i] . ".css\" type=\"text/css\" title=\"" . $style_name[$i] . "\" media=\"screen\" />\n");
+      echo("  <link rel=\"stylesheet\" href=\"" . $res_prefix . "themes/" . $styles[$i] . ".css\" type=\"text/css\" title=\"" . $style_name[$i] . "\" media=\"screen\">\n");
     }
     else {
-      echo("  <link rel=\"alternate styleSheet\" href=\"" . $res_prefix . "themes/" . $styles[$i] . ".css\" type=\"text/css\" title=\"" . $style_name[$i] . "\" media=\"screen\" />\n");
+      echo("  <link rel=\"alternate styleSheet\" href=\"" . $res_prefix . "themes/" . $styles[$i] . ".css\" type=\"text/css\" title=\"" . $style_name[$i] . "\" media=\"screen\">\n");
     }
 }
 ?>
-  <link rel="stylesheet" href="<?= $res_prefix ?>themes/print.css" type="text/css" media="print" />
+  <link rel="stylesheet" href="<?= $res_prefix ?>themes/print.css" type="text/css" media="print">
 
-  <meta name="author" content="<?= $author ?>" />
-  <meta name="description" content="<?= $description ?>" />
-  <meta name="keywords" content="<?= $keywords ?>" />
-  <meta name="fediverse:creator" content="<?= $fediversecreator ?>" />
+  <meta name="author" content="<?= $author ?>">
+  <meta name="description" content="<?= $description ?>">
+  <meta name="keywords" content="<?= $keywords ?>">
+  <meta name="fediverse:creator" content="<?= $fediversecreator ?>">
 
-  <meta property="og:url" content="<?= current_url() ?>" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="<?= $page_title ?>" />
-  <meta property="og:description" content="<?= $description ?>" />
-  <meta property="og:image" content="<?= $image ?>" />
-  <meta property="og:author_name" content="<?= $author ?>" />
+  <meta property="og:url" content="<?= current_url() ?>">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="<?= $page_title ?>">
+  <meta property="og:description" content="<?= $description ?>">
+  <meta property="og:image" content="<?= $image ?>">
+  <meta property="og:author_name" content="<?= $author ?>">
 
-  <meta name="robots" content="all" />
-  <meta name="viewport" content="initial-scale=1.0" />
+  <meta name="robots" content="all">
+  <meta name="viewport" content="initial-scale=1.0">
 <?php
 if ($animate) {
   echo("<script type=\"text/javascript\" src=\"./animate/anim" . $animation . ".js\"></script>");
