@@ -88,7 +88,7 @@ function epoch_to_db_datetime($epoch) {
 }
 
 function clean_text($text) {
-	$result = $text;
+	$result = (string) $text;
 
 	$result = preg_replace("/\'/", "''", $result);
 	$result = preg_replace("/</", "&lt;", $result);
@@ -98,7 +98,7 @@ function clean_text($text) {
 }
 
 function clean_text_for_input($text) {
-	$result = $text;
+	$result = (string) $text;
 
 	$result = preg_replace("/&/", "&amp;", $result);
 	$result = preg_replace("/\"/", "&quot;", $result);
@@ -109,7 +109,7 @@ function clean_text_for_input($text) {
 }
 
 function clean_text_rss($text) {
-	$result = $text;
+	$result = (string) $text;
 
 	$result = preg_replace("/&/", "&amp;", $result);
 	$result = preg_replace("/</", "&lt;", $result);
@@ -119,7 +119,7 @@ function clean_text_rss($text) {
 }
 
 function message_display($text) {
-	$result = $text;
+	$result = (string) $text;
 
 	$result = preg_replace("/\n/", "<br>", $result);
 	$result = preg_replace("/(http|https|ftp):\/\/(\S*.\S*)/g", "<a href=\"$1:\/\/$2\">$1:\/\/$2<\/a>", $result);
