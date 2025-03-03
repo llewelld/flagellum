@@ -67,7 +67,6 @@ $edit_main .= "<p>Keywords:\n";
 $edit_main .= "<p><textarea class=\"text\" name=\"list_keywords\" rows=3 cols=60 wrap=\"virtual\">" . clean_text_for_input($list_keywords) . "</textarea>\n";
 
 $edit_main .= "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n";
-$edit_main .= "<p /><input type=\"checkbox\" name=\"comments\" value=\"true\">Allow comments?</input>\n";
 
 $edit_main .= "<p><input class=\"submit\" type=submit name=\"toss\" value=\"Submit\">\n";
 $edit_main .= "</form>\n";

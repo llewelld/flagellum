@@ -15,16 +15,13 @@ $value_string[5] = isset($_POST["navigation"]) ? $_POST["navigation"] : "";
 $value_string[6] = isset($_POST["main"]) ? $_POST["main"] : "";
 $value_string[7] = isset($_POST["botstop"]) ? (int)($_POST["botstop"] == "true") : 0;
 $value_string[8] = isset($_POST["access"]) ? (int)($_POST["access"] == "true") : 0;
-$value_string[9] = isset($_POST["comments"]) ? (int)($_POST["comments"] == "true") : 0;
+$value_string[9] = isset($_POST["comments_id"]) ? $_POST["comments_id"] : "";
 
 if ($value_string[7] != 1) {
 	$value_string[7] = 0;
 }
 if ($value_string[8] != 1) {
 	$value_string[8] = 0;
-}
-if ($value_string[9] != 1) {
-	$value_string[9] = 0;
 }
 
 $value_string[7] = 0;
@@ -75,7 +72,7 @@ if ($user_type == "admin") {
 	$sql->bindParam(':page_id', $page_id);
 	$sql->execute();
 
-	$sql = $conn->prepare("update Pages set page_comments = :value where page_id = :page_id");
+	$sql = $conn->prepare("update Pages set page_comments_id = :value where page_id = :page_id");
 	$sql->bindParam(':value', $value_string[9]);
 	$sql->bindParam(':page_id', $page_id);
 	$sql->execute();

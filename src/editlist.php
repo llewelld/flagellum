@@ -12,7 +12,7 @@ $side_text_class = array();
 $navbar_string;
 $navigation_string;
 $page_title;
-$list_comments = FALSE;
+$list_comments_id = "";
 
 $list_date = "";
 $list_title = "";
@@ -33,7 +33,7 @@ if (sizeof($result) > 0) {
 	$list_body = $result[0]["list_body"];
 	$list_id = $result[0]["list_id"];
 	$list_keywords = $result[0]["list_keywords"];
-	$list_comments = $result[0]["list_comments"];
+	$list_comments_id = $result[0]["list_comments_id"];
 }
 
 $navbar_string  = "<span class=\"hlink\"><a href=\"//home\">Home</a></span>";
@@ -82,6 +82,8 @@ $edit_main .= "<input type=hidden name=list_id value=\"" . $list_id . "\">\n";
 $edit_main .= "<p />Date: <input class=\"text\" type=text name=list_date value=\"" . $list_date_string . "\" size=\"40\" maxlength=\"64\">\n";
 $edit_main .= "<p />Title: <input class=\"text\" type=text name=list_title value=\"" . clean_text_for_input($list_title) . "\" size=\"40\" maxlength=\"255\">\n";
 
+$edit_main .= "<p />Comments ID: <input class=\"text\" type=text name=list_comments_id value=\"" . clean_text_for_input($list_comments_id) . "\" size=\"40\" maxlength=\"32\">\n";
+
 $edit_main .= "<p />Body:\n";
 $edit_main .= "<p /><textarea class=\"text\" name=\"list_body\" rows=10 cols=60 wrap=\"virtual\">" . clean_text_for_input($list_body) . "</textarea>\n";
 
@@ -91,14 +93,6 @@ $edit_main .= "<script>CKEDITOR.replace( \"list_body\", {enterMode: CKEDITOR.ENT
 $edit_main .= "<p />Keywords:\n";
 $edit_main .= "<p /><textarea class=\"text\" name=\"list_keywords\" rows=3 cols=60 wrap=\"virtual\">" . clean_text_for_input($list_keywords) . "</textarea>\n";
 
-$edit_main .= "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n";
-
-if ($list_comments == TRUE) {
-  $edit_main .= "<p /><input type=\"checkbox\" name=\"comments\" value=\"true\" checked=\"1\">Allow comments?</input>\n";
-}
-else {
-  $edit_main .= "<p /><input type=\"checkbox\" name=\"comments\" value=\"true\">Allow comments?</input>\n";
-}
 
 $edit_main .= "<p /><input class=\"submit\" type=submit name=\"toss\" value=\"Submit\">\n";
 $edit_main .= "</form>\n";

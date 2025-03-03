@@ -93,6 +93,7 @@ if ($shader_file_light != "") {
   >extra/snow.js"></script>
 */
 ?>
+  <script type="text/javascript" src="scripts/comments.js"></script>
 </head>
 <body>
 
@@ -163,19 +164,6 @@ for ($i = 0; $i < sizeof($side_text); $i++) {
 </div>
 <div id="animate" style="position:absolute;left:0px;top:0px;">
 </div>
-<!-- 
-<script type="text/javascript">
-    var disqus_shortname = 'flypig';
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
- -->
 </body>
 </html>
 

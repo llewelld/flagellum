@@ -581,3 +581,49 @@ img, video, canvas {
 	}
 }
 
+/* Fedivers comments */
+
+.comment_author {
+    height: 40px;
+}
+
+.comment_avatar {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 8px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.comment_content {
+    min-height: 40px;
+}
+
+.comment {
+    padding-top: 24px;
+    padding-bottom: 8px;
+}
+
+.comment_reply {
+    margin-left: 16px;
+    padding-left: 16px;
+    border-left: 4px solid #a7c72e;
+}
+
+summary {
+    margin-top: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+summary::before {
+    content: "";
+    display: list-item;
+    position: absolute;
+}
+
+.comment-cw {
+    margin-left: 1em;
+}
+

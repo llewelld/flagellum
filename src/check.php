@@ -16,6 +16,7 @@ $description = $CONFIG['description'];
 $keywords = $CONFIG['keywords'];
 $image = $CONFIG['image'];
 $fediversecreator = $CONFIG['fediversecreator'];
+$comments_instance = $CONFIG['comments_instance'];
 
 $user_username = "";
 $user_password = "";
@@ -32,7 +33,6 @@ $code_salt = 'slkdf34gj';
 $animation = 0;
 $shaders_light = array("", "wavylines.txt", "bokeh.txt");
 $shaders_dark = array("", "wavylines.txt", "stars.txt");
-
 
 $shader_file_light = "";
 $shader_file_dark = "";

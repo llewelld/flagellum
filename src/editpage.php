@@ -18,7 +18,7 @@ $navigation_list = "";
 $navigation_string = "";
 $page_botstop = FALSE;
 $page_access = FALSE;
-$page_comments = FALSE;
+$page_comments_id = "";
 
 $sql = $conn->prepare("SELECT * FROM Pages where page_name = :page_name");
 $sql->bindParam(':page_name', $page_name);
@@ -40,7 +40,7 @@ if (sizeof($result) <= 0) {
   $page_url_rel = "";
   $page_botstop = FALSE;
   $page_access = FALSE;
-  $page_comments = FALSE;
+  $page_comments_id = "";
 }
 else {
   $page_id = $result[0]["page_id"];
@@ -53,7 +53,7 @@ else {
   $page_url_rel = $result[0]["page_url_rel"];
   $page_botstop = $result[0]["page_botstop"];
   $page_access = $result[0]["page_access"];
-  $page_comments = $result[0]["page_comments"];
+  $page_comments_id = $result[0]["page_comments_id"];
 }
 
 $navbar_array = explode(" ", $navbar_list);
@@ -120,6 +120,7 @@ $edit_main .= "<p />ID: <input class=\"text\" type=text name=page_name value=\""
 $edit_main .= "<p />Title: <input class=\"text\" type=text name=page_title value=\"" . clean_text_for_input($page_title) . "\" size=\"40\" maxlength=\"255\" />\n";
 $edit_main .= "<p />Short title: <input class=\"text\" type=text name=page_short_title value=\"" . clean_text_for_input($page_short_title) . "\" size=\"40\" maxlength=\"255\" />\n";
 $edit_main .= "<p />URL: <input class=\"text\" type=text name=page_url_rel value=\"" . clean_text_for_input($page_url_rel) . "\" size=\"40\" maxlength=\"255\" />\n";
+$edit_main .= "<p />Comments ID: <input class=\"text\" type=text name=comments_id value=\"" . clean_text_for_input($comments_id) . "\" size=\"40\" maxlength=\"32\" />\n";
 $edit_main .= "<p />Navbar: <input class=\"text\" type=text name=navbar value=\"" . clean_text_for_input($navbar_list) . "\" size=\"40\" maxlength=\"255\" />\n";
 $edit_main .= "<p />Navigation:\n";
 $edit_main .= "<p /><textarea class=\"text\" name=\"navigation\" rows=8 cols=60 wrap=\"virtual\">" . clean_text_for_input($navigation_list) . "</textarea>\n";
@@ -144,15 +145,6 @@ if ($page_access == TRUE) {
 }
 else {
   $edit_main .= "<input type=\"checkbox\" name=\"access\" value=\"true\">Make private?</input>\n";
-}
-
-$edit_main .= "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n";
-
-if ($page_comments == TRUE) {
-  $edit_main .= "<input type=\"checkbox\" name=\"comments\" value=\"true\" checked=\"1\">Allow comments?</input>\n";
-}
-else {
-  $edit_main .= "<input type=\"checkbox\" name=\"comments\" value=\"true\">Allow comments?</input>\n";
 }
 
 $edit_main .= "<p><input class=\"submit\" type=submit name=\"toss\" value=\"Submit\">\n";

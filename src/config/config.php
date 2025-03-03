@@ -16,5 +16,6 @@ $CONFIG = array(
 	'keywords' => 'Flagellum, website, lists, templates, pages',
 	'image' => 'https://www.example.com/images/flypig-card.jpg',
 	'fediversecreator' => '@account@mastodon.server',
+	'comments_instance' => 'https://mastodon.server',
 );
 

@@ -161,9 +161,9 @@ if (($list !== "") || ($list_id >= 0)) {
 				$list_title = $result[$list_pos]["list_title"];
 				$list_body = $result[$list_pos]["list_body"];
 				$list_id = $result[$list_pos]["list_id"];
-				$list_comments = $result[$list_pos]["list_comments"];
+				$list_comments_id = $result[$list_pos]["list_comments_id"];
 				if ($override_comments == TRUE) {
-					$page_comments = $list_comments;
+					$page_comments_id = $list_comments_id;
 				}
 
 				$main_text[$list_main] .= "<div class=\"list_item\">";
@@ -189,15 +189,9 @@ if (($list !== "") || ($list_id >= 0)) {
 					}
 				}
 
-				if (($list_comments == TRUE) && ($override_comments != TRUE) && ($list_index != TRUE)) {
+				if (($list_comments != "") && ($override_comments != TRUE) && ($list_index != TRUE)) {
 					$main_text[$list_main] .= "<span class=\"list_link\"><a href=\"";
-					$main_text[$list_main] .= $permalink . "#disqus_thread\"";
-					//$main_text[$list_main] .= " data-disqus-identifier=\"";
-
-					//$comments_id = generate_id("list", $list, $list_id, "", "", "", "");
-
-					//main_text[$list_main] .= $comments_id;
-					//main_text[$list_main] .= "\"";
+					$main_text[$list_main] .= $permalink . "#comment_thread\"";
 					$main_text[$list_main] .= ">Comment</a></span>\n";
 				}
 

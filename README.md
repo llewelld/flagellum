@@ -45,6 +45,7 @@ $CONFIG = array(
 	'keywords' => 'Flagellum, website, lists, templates, pages',
 	'image' => 'https://www.example.com/images/flypig-card.jpg',
 	'fediversecreator' => '@account@mastodon.server',
+	'comments_instance' => 'https://mastodon.server',
 );
 ```
 
@@ -77,6 +78,8 @@ $CONFIG = array(
 **`image`**: provides the [Open Graph](https://ogp.me/) image for the site.
 
 **`fediversecreator`**: used to populate the `fediverse:creator` metata for the site.
+
+**`comments_instance`**: The ActivityPub server used to pull comments from.
 
 ## Licence and Contact
 

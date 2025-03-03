@@ -10,11 +10,7 @@ $value_string[0] = isset($_POST["list_date"]) ? $_POST["list_date"] : "";
 $value_string[1] = isset($_POST["list_title"]) ? $_POST["list_title"] : "";
 $value_string[2] = isset($_POST["list_body"]) ? $_POST["list_body"] : "";
 $value_string[3] = $list_keywords;
-$value_string[4] = isset($_POST["comments"]) ? (int)($_POST["comments"] == "true") : 0;
-
-if ($value_string[4] != 1) {
-	$value_string[4] = 0;
-}
+$value_string[4] = isset($_POST["list_comments_id"]) ? $_POST["list_comments_id"] : "";
 
 if ($user_type === "admin") {
 	$list_date = epoch_to_db_datetime(guess_date($value_string[0]));
@@ -39,8 +35,8 @@ if ($user_type === "admin") {
 	$sql->bindParam(':list_id', $list_id);
 	$sql->execute();
 
-	$sql = $conn->prepare("UPDATE Lists SET list_comments = :list_comments WHERE list_id = :list_id");
-	$sql->bindParam(':list_comments', $value_string[4]);
+	$sql = $conn->prepare("UPDATE Lists SET list_comments_id = :list_comments_id WHERE list_id = :list_id");
+	$sql->bindParam(':list_comments_id', $value_string[4]);
 	$sql->bindParam(':list_id', $list_id);
 	$sql->execute();
 }
