@@ -14,9 +14,13 @@
 		$main_text[$comments_main] = "<h2>Comments</h2>\n";
 		$main_text[$comments_main] .= "<div id=\"comment_thread\"></div>\n";
 		$main_text[$comments_main] .= "\n";
-		$main_text[$comments_main] .= "<a id=\"show_comments\" href=\"#comment_thread\" onClick=\"return loadComments('" . $comments_instance . "', '" . $page_comments_id . "')\">Uncover Fediverse comments</a>\n";
+		$main_text[$comments_main] .= "<a id=\"show_comments\" class=\"show_comments hidden\" href=\"#comment_thread\" onClick=\"return loadComments('" . $comments_instance . "', '" . $page_comments_id . "')\">Uncover Fediverse comments</a>\n";
 		$main_text[$comments_main] .= "\n";
-		$main_text[$comments_main] .= "<noscript>~View comments from the <a href=\"" . $comments_instance . "/statuses/" . $page_comments_id . "\">Fediverse</a></noscript>\n";
+
+		$main_text[$comments_main] .= "<noscript>\n";
+		$main_text[$comments_main] .= "  <a id=\"view_comments\" class=\"show_comments\" href=\"" . $comments_instance . "/statuses/" . $page_comments_id . "\">View comments on the Fediverse</a>\n";
+		$main_text[$comments_main] .= "</noscript>\n";
+
 		$main_text[$comments_main] .= "<div id=\"comments_list\"></div>\n";
 		$main_text[$comments_main] .= "\n";
 	}

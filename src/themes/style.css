@@ -328,12 +328,12 @@ hr {
     padding-left: 20px;
 }
 
-#show_comments {
+.show_comments {
   background: transparent url(../images/style/blob-out.png) no-repeat center left;
   padding-left: 30px;
 }
 
-#show_comments:hover {
+.show_comments:hover {
   background: transparent url(../images/style/blob-in.png) no-repeat center left;
 }
 
@@ -387,5 +387,9 @@ summary::before {
 
 .comment-cw {
     margin-left: 1em;
+}
+
+.hidden {
+    display: none;
 }
 

@@ -478,7 +478,7 @@ a, a:visited {
 	color: #8c44a6;
 }
 
-#show_comments {
+.show_comments {
 	color: #f0c5ff;
 	margin-left: auto;
 	margin-right: auto;
@@ -492,7 +492,7 @@ a, a:visited {
 	display: block;
 }
 
-#show_comments:hover {
+.show_comments:hover {
 	color: #0000ee;
 	background: rgba(220, 220, 255, 0.7);
 	transition: all 0.3s ease;
@@ -708,5 +708,9 @@ summary::before {
 
 .comment-cw {
     margin-left: 1em;
+}
+
+.hidden {
+    display: none;
 }
 

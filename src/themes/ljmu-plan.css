@@ -404,3 +404,7 @@ summary::before {
     margin-left: 1em;
 }
 
+.hidden {
+    display: none;
+}
+

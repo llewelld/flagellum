@@ -68,3 +68,10 @@ function showComments(instance, comment_id) {
     .then(() => {loadComment.innerHTML = "Reload comments"});
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  var comment_button = document.getElementById('show_comments');
+  if (comment_button) {
+    comment_button.classList.remove('hidden')
+  }
+});
+
