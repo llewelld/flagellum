@@ -146,6 +146,4 @@ else {
 }
 */
 
-header('Permissions-Policy: interest-cohort=()');
-
 ?>
