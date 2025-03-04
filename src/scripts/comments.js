@@ -54,7 +54,7 @@ function showComments(instance, comment_id) {
             + "<div id=\"comment-" + reply.id + "\" class=\"" + commentClass + "\">\n"
             + "  <div class=\"comment_author\">\n"
             + "    <a rel=\"external nofollow\" href=\"" + reply.uri + "\" rel=\"nofollow\">"
-            + "      <img class=\"comment_avatar\" src=\"" + escapeHtml(reply.account.avatar_static) + "\" width=\"40px\" height=\"40px\" alt=\"Avatar of " + reply.account.display_name + "\">\n"
+            + "      <img class=\"comment_avatar\" src=\"" + escapeHtml(reply.account.avatar_static) + "\" width=\"40px\" height=\"40px\" alt=\"Avatar of " + escapeHtml(reply.account.display_name) + "\">\n"
             + "      " + reply.created_at.substr(0, 10) + " : " + reply.account.display_name
             + "    </a>\n"
             + "  </div>\n"
@@ -67,7 +67,7 @@ function showComments(instance, comment_id) {
         commentsList.innerHTML = "<div class=\"comments-none\"><p>No comments yet. Reply to the <a href=\"" + thread + "\">Fediverse thread</a> for it to appear here.</p></div>";
       }
     })
-    .then(() => {loadComment.innerHTML = "Reload comments"});
+    .then(() => {loadComment.innerHTML = "Reload"});
 }
 
 document.addEventListener("DOMContentLoaded", function() {
