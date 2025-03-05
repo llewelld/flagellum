@@ -1,3 +1,9 @@
+// MIT Licence (MIT)
+// Copyright (c) 2025 Jan Wildeboer, Ashwin V. Mohanan, Bastian Greshake Tzovaras, David Llewellyn-Jones, and others
+// https://codeberg.org/gedankenstuecke/pages-source/src/commit/789413e101e8e6b17f9223eb955e725baf2ff22f/_includes/fedi_comments.html
+// https://codeberg.org/jwildeboer/jwildeboersource/src/commit/030cc2652383f5fdcba3eadc6998f7f1a63260f5/_includes/fediverse_comments.html
+// https://codeberg.org/ashwinvis/m.css/src/commit/fa25169f37837778d2ff2da6e80a33e69071e18e/js/fedicomments.js
+
 function loadScript(src) {
   return new Promise((resolve, reject) => {
     if (document.querySelector("head > script[src=\"" + src + "\"]") !== null) return resolve();
@@ -42,7 +48,7 @@ function showComments(instance, comment_id) {
           reply.account.display_name = escapeHtml(reply.account.display_name)
           reply.account.emojis.forEach(emoji => {
             reply.account.display_name = reply.account.display_name.replace(":" + emoji.shortcode + ":",
-                "<img src=\"" + escapeHtml(emoji.static_url) + "\" alt=\"Emoji " + emoji.shortcode + "\" height=\"20\" width=\"20\" />");
+              "<img src=\"" + escapeHtml(emoji.static_url) + "\" alt=\"Emoji " + emoji.shortcode + "\" height=\"20\" width=\"20\" />");
           });
           const commentContent = (reply.spoiler_text === "")
             ? reply.content
