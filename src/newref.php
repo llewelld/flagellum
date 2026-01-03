@@ -55,7 +55,7 @@ $edit_main .= "<script src=\"ckeditor/ckeditor.js\"></script>\n";
 
 $edit_main .= "<form action=\"newref_do.php\" method=\"post\">\n";
 $edit_main .= "<p>This page can be used to create a new reference in the references list. Enter values below, then click \"Submit\" to enter the reference details.\n";
-$edit_main .= "<p>Authors: <input class=\"text\" type=text name=ref_authors value=\"\" size=\"40\" maxlength=\"255\">\n";
+$edit_main .= "<p>Authors: <input class=\"text\" type=text name=ref_authors value=\"\" size=\"40\" maxlength=\"1023\">\n";
 $edit_main .= "<p>Title: <input class=\"text\" type=text name=ref_title value=\"\" size=\"40\" maxlength=\"255\">\n";
 $edit_main .= "<p>Publication: <input class=\"text\" type=text name=ref_publication value=\"\" size=\"40\" maxlength=\"255\">\n";
 $edit_main .= "<p>Date: <input class=\"text\" type=text name=ref_date value=\"" . full_datetime($ref_date) . "\" size=\"40\" maxlength=\"64\">\n";

@@ -98,7 +98,7 @@ $edit_main .= "<form action=\"editref_do.php\" method=\"post\">\n";
 $edit_main .= "<p>This page can be used to edit a reference from the references list. Enter values below, then click \"Submit\" to update the reference details.\n";
 $edit_main .= "<input type=hidden name=ref_id value=\"" . $ref_id . "\">\n";
 
-$edit_main .= "<p>Authors: <input class=\"text\" type=text name=ref_authors value=\"" . clean_text_for_input($ref_authors) . "\" size=\"40\" maxlength=\"255\">\n";
+$edit_main .= "<p>Authors: <input class=\"text\" type=text name=ref_authors value=\"" . clean_text_for_input($ref_authors) . "\" size=\"40\" maxlength=\"1023\">\n";
 $edit_main .= "<p>Title: <input class=\"text\" type=text name=ref_title value=\"" . clean_text_for_input($ref_title) . "\" size=\"40\" maxlength=\"255\">\n";
 $edit_main .= "<p>Publication: <input class=\"text\" type=text name=ref_publication value=\"" . clean_text_for_input($ref_publication) . "\" size=\"40\" maxlength=\"255\">\n";
 $edit_main .= "<p>Date: <input class=\"text\" type=text name=ref_date value=\"" . clean_text_for_input($ref_date_string) . "\" size=\"40\" maxlength=\"64\">\n";
